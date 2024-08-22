@@ -1,0 +1,255 @@
+
+                 _..--+~/@-~--.      _____  __  __  _____   ____    ____
+             _-=~      (  .   "}    | ____| \ \/ / | ____| / ___|  / ___|
+          _-~     _.--=.\ \""""     |  _|    \  /  |  _|   \___ \  \___ \
+        _~      _-       \ \_\      | |___   /  \  | |___   ___) |  ___) |
+       =      _=          '--'      |_____| /_/\_\ |_____| |____/  |____/
+      '      =
+     :      :     ____            EXtreme-scale Electronic Structure Software
+___ |      ;                               Enjoy the power of GPUs!
+    ;       ;
+  ___=       \ ___ __     __..-...__
+     :        =_     _.-~~          ~~--.__
+_____ \         ~-+-~                   ___~=_______
+       == ...______ __ ___ _--~~--_
+  
+------------------------------------------------------------------------------
+    * Giuseppe Barca         * Hamish Brown           * Jorge Galvez-Vallejo
+    * Andrew Gilbert         * Min Htoo               * Fazeleh Kazemian    
+    * Sean Laguna            * Jack Miller            * Elise Palethorpe    
+    * Oliver Pulsford        * Ross Pure              * Christopher Seidl   
+    * Dylan Silke            * Joshua Singla          * Calum Snowdon       
+    * Ryan Stocks            * Ryan Swart             * Fiona Yu            
+------------------------------------------------------------------------------
+
+Commit no. used 9aebb21414bfc7c3035389d687942e4ef932d645
+
+Start of Calculation Local time: 2024-08-22 10:53:30
+Start of Calculation UTC time:   2024-08-22 17:53:30
+
+├── Calculation params
+│   ├── Title: n_2beg_conv_1e-06
+│   ├── Driver: Dynamics
+│   ├── Model
+│   │   ├── Theory level: RI-MP2
+│   │   ├── Spin configuration: Restricted
+│   │   ├── Primary basis: cc-pVDZ
+│   │   ├── Auxiliary basis: cc-pVDZ-RIFIT
+│   │   ├── Force cartesian basis sets: True
+│   │   ├── Standard orientation: Full System
+│   ├── Topologies
+│   │   ├── Number of topologies: 1
+│   ├── Keywords
+│   │   ├── SCF keywords
+│   │   │   ├── Max iterations: 50
+│   │   │   ├── Batch size: 2560
+│   │   │   ├── DIIS size: 8
+│   │   │   ├── Convergence threshold: 1.000e-06
+│   │   │   ├── Use guess fallback: True
+│   │   │   ├── Convergence metric: DIIS
+│   │   │   ├── Density threshold: 1.000e-10
+│   │   │   ├── RI-HF: True
+│   │   │   ├── Store RI B tensor on host: False
+│   │   │   ├── Compress B tensor shell pairs: False
+│   │   ├── Fragmentation keywords
+│   │   │   ├── Fragmented energy type: Total
+│   │   │   ├── Fragmentation level: Trimer
+│   │   │   ├── Cutoff type: Centroid
+│   │   │   ├── Fragmentation Cutoffs
+│   │   │   │   ├── Dimer: 2
+│   │   │   │   ├── Trimer: 1.200
+│   │   ├── RTAT keywords
+│   │   │   ├── Enabled: True
+│   │   ├── Debug keywords
+│   │   │   ├── Dry run: False
+│   │   │   ├── Skip calcs: False
+│   │   │   ├── Subfragment XYZ debug: False
+│   │   ├── Export Keywords
+│   │   │   ├── Not exporting any matrices
+│   │   ├── Guess keywords
+│   │   │   ├── Superposition of monomer densities: False
+│   │   │   ├── Superposition of subfragment densities: False
+│   │   │   ├── Basis set projection: False
+│   │   ├── Boundary keywords
+│   │   │   ├── X
+│   │   │   │   ├── Type: None
+│   │   │   ├── Y
+│   │   │   │   ├── Type: None
+│   │   │   ├── Z
+│   │   │   │   ├── Type: None
+│   │   ├── Logging
+│   │   │   ├── Restricted logs visible
+│   │   │   ├── Console logging
+│   │   │   │   ├── Level: PERFORMANCE
+│   │   ├── Dynamics Keywords
+│   │   │   ├── Timestep: 0.001 ps
+│   │   │   ├── # timesteps: 100
+│   │   │   ├── Use async timesteps: True
+│   │   ├── Integrals Keywords
+│   │   │   ├── Scheduler: Callback
+│   │   │   ├── Number of streams: 4
+│   ├── System
+│   │   ├── Max GPU Memory: 32 GB
+│   │   ├── Oversubscribe GPUs: False
+│   │   ├── Teams per node: 4
+│   │   ├── # GPUs per team: 1
+
+Queue building took 0.064796
+Current flop count SP: 0 FLOPS, DP: 394.26708 GFLOPS
+Current flop count SP: 0 FLOPS, DP: 155.6079 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 2.6531399 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 5.6523921 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 11.464528 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 14.808751 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 18.538965 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 22.515394 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 26.445902 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 30.254971 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 33.793965 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 36.861566 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 40.989197 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 44.371224 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 48.549722 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 51.893445 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 55.505925 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 59.723625 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 63.298544 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 66.492184 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 69.711824 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 74.103755 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 77.454039 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 80.498734 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 83.90563 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 87.41778 PFLOPS
+Timestep 0 took 27.692214
+Current total flops: SP: 0 FLOPS, DP: 90.850667 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 94.291409 PFLOPS
+Finalising timestep 0 of 100
+Current total flops: SP: 0 FLOPS, DP: 96.72794 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.06006 E_MP2_OS: -83.40272477 E_MP2_SS: -29.85960461 E_MP2: -113.2623294 E_total: -35865.32239
+Kinetic energy: 0.000000
+Finalised timestep 0
+Finished timestep 0 of 100
+Current flop count SP: 0 FLOPS, DP: 96.72794 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 102.64883 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 107.54044 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 111.27652 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 115.09806 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 119.07152 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 122.81237 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 126.44681 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 129.75719 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 133.77047 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 136.89631 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 140.89643 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 144.67601 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 148.27686 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 151.91335 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 155.62975 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 158.75852 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 162.26648 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 165.93004 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 169.96969 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 172.26583 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 176.061 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 179.50013 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 183.29382 PFLOPS
+Timestep 1 took 25.345926
+Current total flops: SP: 0 FLOPS, DP: 183.89677 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 187.19117 PFLOPS
+Finalising timestep 1 of 100
+Current total flops: SP: 0 FLOPS, DP: 189.72745 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.09152 E_MP2_OS: -83.43386546 E_MP2_SS: -29.8702889 E_MP2: -113.3041544 E_total: -35865.39567
+Kinetic energy: 0.075757
+Finalised timestep 1
+Finished timestep 1 of 100
+Current flop count SP: 0 FLOPS, DP: 189.72745 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 195.69592 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 200.41702 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 204.14858 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 207.94449 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 211.969 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 215.5097 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 219.32854 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 222.7093 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 226.719 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 229.96189 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 233.86065 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 237.53522 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 241.30161 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 244.93912 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 248.58023 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 251.73796 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 255.26666 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 259.00551 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 263.03774 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 265.44702 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 269.14372 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 272.58813 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 276.42409 PFLOPS
+Timestep 2 took 25.318629
+Current total flops: SP: 0 FLOPS, DP: 276.92538 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 280.30491 PFLOPS
+Finalising timestep 2 of 100
+Current total flops: SP: 0 FLOPS, DP: 282.7501 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.1273 E_MP2_OS: -83.51611139 E_MP2_SS: -29.89906347 E_MP2: -113.4151749 E_total: -35865.54248
+Kinetic energy: 0.235568
+Finalised timestep 2
+Finished timestep 2 of 100
+Current flop count SP: 0 FLOPS, DP: 282.7501 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 288.71609 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 293.47083 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 297.17782 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 301.01318 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 305.01488 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 308.61233 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 312.42565 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 315.86069 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 319.85647 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 323.18829 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 327.40655 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 330.86833 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 334.48713 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 338.39 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 341.96826 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 345.00935 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 348.42818 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 352.50842 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 356.20606 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 358.85788 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 362.45835 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 365.96196 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 369.64794 PFLOPS
+Timestep 3 took 25.263173
+Current total flops: SP: 0 FLOPS, DP: 370.02531 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 373.3476 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 376.0427 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 381.22048 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 385.9611 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 389.48457 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 393.34376 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 397.46018 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 401.32132 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 404.81954 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 408.01756 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 411.71861 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 415.37657 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 418.20207 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 421.81455 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 424.82437 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 428.02853 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 431.74151 PFLOPS
+srun: error: Node failure on nid003804
+slurmstepd: error: *** STEP 29627061.0 ON nid001173 CANCELLED AT 2024-08-22T18:03:02 DUE TO NODE FAILURE, SEE SLURMCTLD LOG FOR DETAILS ***
