@@ -128,3 +128,11 @@ for convergence_threshold in [1e-6, 1e-8, 1e-9]:
     with open(f"{name}.json", "w") as out_file:
         out_file.write(json.dumps(j))
     generate_slurm(name, j)
+
+for N in [32, 64, 128, 256, 512, 1024, 1536]:
+    name = f"n_2beg_{N}_nodes_conv_1e-9"
+    j = generate_input(topology_2beg, name)
+    j["keywords"]["scf"]["convergence_threshold"] = 1e-9
+    with open(f"{name}.json", "w") as out_file:
+        out_file.write(json.dumps(j))
+    generate_slurm(name, j, N)
