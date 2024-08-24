@@ -1,0 +1,2656 @@
+
+                 _..--+~/@-~--.      _____  __  __  _____   ____    ____
+             _-=~      (  .   "}    | ____| \ \/ / | ____| / ___|  / ___|
+          _-~     _.--=.\ \""""     |  _|    \  /  |  _|   \___ \  \___ \
+        _~      _-       \ \_\      | |___   /  \  | |___   ___) |  ___) |
+       =      _=          '--'      |_____| /_/\_\ |_____| |____/  |____/
+      '      =
+     :      :     ____            EXtreme-scale Electronic Structure Software
+___ |      ;                               Enjoy the power of GPUs!
+    ;       ;
+  ___=       \ ___ __     __..-...__
+     :        =_     _.-~~          ~~--.__
+_____ \         ~-+-~                   ___~=_______
+       == ...______ __ ___ _--~~--_
+  
+------------------------------------------------------------------------------
+    * Giuseppe Barca         * Hamish Brown           * Jorge Galvez-Vallejo
+    * Andrew Gilbert         * Min Htoo               * Fazeleh Kazemian    
+    * Sean Laguna            * Jack Miller            * Elise Palethorpe    
+    * Oliver Pulsford        * Ross Pure              * Christopher Seidl   
+    * Dylan Silke            * Joshua Singla          * Calum Snowdon       
+    * Ryan Stocks            * Ryan Swart             * Fiona Yu            
+------------------------------------------------------------------------------
+
+Commit no. used 9aebb21414bfc7c3035389d687942e4ef932d645
+
+Start of Calculation Local time: 2024-08-23 22:17:36
+Start of Calculation UTC time:   2024-08-24 05:17:36
+
+├── Calculation params
+│   ├── Title: n_2beg_dimer_20
+│   ├── Driver: Dynamics
+│   ├── Model
+│   │   ├── Theory level: RI-MP2
+│   │   ├── Spin configuration: Restricted
+│   │   ├── Primary basis: cc-pVDZ
+│   │   ├── Auxiliary basis: cc-pVDZ-RIFIT
+│   │   ├── Force cartesian basis sets: True
+│   │   ├── Standard orientation: Full System
+│   ├── Topologies
+│   │   ├── Number of topologies: 1
+│   ├── Keywords
+│   │   ├── SCF keywords
+│   │   │   ├── Max iterations: 50
+│   │   │   ├── Batch size: 2560
+│   │   │   ├── DIIS size: 8
+│   │   │   ├── Convergence threshold: 1.000e-07
+│   │   │   ├── Use guess fallback: True
+│   │   │   ├── Convergence metric: DIIS
+│   │   │   ├── Density threshold: 1.000e-10
+│   │   │   ├── RI-HF: True
+│   │   │   ├── Store RI B tensor on host: False
+│   │   │   ├── Compress B tensor shell pairs: False
+│   │   ├── Fragmentation keywords
+│   │   │   ├── Fragmented energy type: Total
+│   │   │   ├── Fragmentation level: Dimer
+│   │   │   ├── Cutoff type: Centroid
+│   │   │   ├── Fragmentation Cutoffs
+│   │   │   │   ├── Dimer: 2
+│   │   │   │   ├── Trimer: 1.200
+│   │   ├── RTAT keywords
+│   │   │   ├── Enabled: True
+│   │   ├── Debug keywords
+│   │   │   ├── Dry run: False
+│   │   │   ├── Skip calcs: False
+│   │   │   ├── Subfragment XYZ debug: False
+│   │   ├── Export Keywords
+│   │   │   ├── Not exporting any matrices
+│   │   ├── Guess keywords
+│   │   │   ├── Superposition of monomer densities: False
+│   │   │   ├── Superposition of subfragment densities: False
+│   │   │   ├── Basis set projection: False
+│   │   ├── Boundary keywords
+│   │   │   ├── X
+│   │   │   │   ├── Type: None
+│   │   │   ├── Y
+│   │   │   │   ├── Type: None
+│   │   │   ├── Z
+│   │   │   │   ├── Type: None
+│   │   ├── Logging
+│   │   │   ├── Restricted logs visible
+│   │   │   ├── Console logging
+│   │   │   │   ├── Level: PERFORMANCE
+│   │   ├── Dynamics Keywords
+│   │   │   ├── Timestep: 0.001 ps
+│   │   │   ├── # timesteps: 100
+│   │   │   ├── Use async timesteps: True
+│   │   ├── Integrals Keywords
+│   │   │   ├── Scheduler: Callback
+│   │   │   ├── Number of streams: 4
+│   ├── System
+│   │   ├── Max GPU Memory: 32 GB
+│   │   ├── Oversubscribe GPUs: False
+│   │   ├── Teams per node: 4
+│   │   ├── # GPUs per team: 1
+
+Queue building took 0.003243
+Current flop count SP: 0 FLOPS, DP: 399.84176 GFLOPS
+Current flop count SP: 0 FLOPS, DP: 147.40169 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 1233.336 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 3.4597424 PFLOPS
+Timestep 0 took 6.054493
+Current total flops: SP: 0 FLOPS, DP: 5.2372616 PFLOPS
+Finalising timestep 0 of 100
+Current total flops: SP: 0 FLOPS, DP: 6.2372909 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.39024 E_MP2_OS: -83.79473432 E_MP2_SS: -30.21256143 E_MP2: -114.0072957 E_total: -35865.39753
+Kinetic energy: 0.000000
+Finalised timestep 0
+Finished timestep 0 of 100
+Current flop count SP: 0 FLOPS, DP: 7.5039308 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 9.7286133 PFLOPS
+Timestep 1 took 2.662362
+Current total flops: SP: 0 FLOPS, DP: 11.046742 PFLOPS
+Finalising timestep 1 of 100
+Current total flops: SP: 0 FLOPS, DP: 12.047306 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.42197 E_MP2_OS: -83.8218449 E_MP2_SS: -30.22067355 E_MP2: -114.0425184 E_total: -35865.46449
+Kinetic energy: 0.062567
+Finalised timestep 1
+Finished timestep 1 of 100
+Current flop count SP: 0 FLOPS, DP: 13.393715 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 15.576603 PFLOPS
+Timestep 2 took 2.638624
+Current total flops: SP: 0 FLOPS, DP: 16.851263 PFLOPS
+Finalising timestep 2 of 100
+Current total flops: SP: 0 FLOPS, DP: 17.86233 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.47199 E_MP2_OS: -83.89334775 E_MP2_SS: -30.24207484 E_MP2: -114.1354226 E_total: -35865.60741
+Kinetic energy: 0.198008
+Finalised timestep 2
+Finished timestep 2 of 100
+Current flop count SP: 0 FLOPS, DP: 19.209983 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 21.401975 PFLOPS
+Timestep 3 took 2.632069
+Current total flops: SP: 0 FLOPS, DP: 22.66148 PFLOPS
+Finalising timestep 3 of 100
+Current total flops: SP: 0 FLOPS, DP: 23.692165 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.47751 E_MP2_OS: -83.98353539 E_MP2_SS: -30.26872858 E_MP2: -114.252264 E_total: -35865.72978
+Kinetic energy: 0.318803
+Finalised timestep 3
+Finished timestep 3 of 100
+Current flop count SP: 0 FLOPS, DP: 25.045393 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 27.225258 PFLOPS
+Timestep 4 took 2.625251
+Current total flops: SP: 0 FLOPS, DP: 28.479639 PFLOPS
+Finalising timestep 4 of 100
+Current total flops: SP: 0 FLOPS, DP: 29.505391 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.45037 E_MP2_OS: -84.06365715 E_MP2_SS: -30.2917309 E_MP2: -114.3553881 E_total: -35865.80576
+Kinetic energy: 0.398612
+Finalised timestep 4
+Finished timestep 4 of 100
+Current flop count SP: 0 FLOPS, DP: 30.865725 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 33.058776 PFLOPS
+Timestep 5 took 2.625644
+Current total flops: SP: 0 FLOPS, DP: 34.303899 PFLOPS
+Finalising timestep 5 of 100
+Current total flops: SP: 0 FLOPS, DP: 35.316478 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.45173 E_MP2_OS: -84.11181767 E_MP2_SS: -30.30449762 E_MP2: -114.4163153 E_total: -35865.86804
+Kinetic energy: 0.464014
+Finalised timestep 5
+Finished timestep 5 of 100
+Current flop count SP: 0 FLOPS, DP: 36.659575 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 38.822806 PFLOPS
+Timestep 6 took 2.675580
+Current total flops: SP: 0 FLOPS, DP: 40.132021 PFLOPS
+Finalising timestep 6 of 100
+Current total flops: SP: 0 FLOPS, DP: 41.11475 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.50366 E_MP2_OS: -84.11922717 E_MP2_SS: -30.30486022 E_MP2: -114.4240874 E_total: -35865.92775
+Kinetic energy: 0.524002
+Finalised timestep 6
+Finished timestep 6 of 100
+Current flop count SP: 0 FLOPS, DP: 42.409519 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 44.554725 PFLOPS
+Timestep 7 took 2.726443
+Current total flops: SP: 0 FLOPS, DP: 45.955782 PFLOPS
+Finalising timestep 7 of 100
+Current total flops: SP: 0 FLOPS, DP: 46.968863 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.5645 E_MP2_OS: -84.08888133 E_MP2_SS: -30.29429261 E_MP2: -114.3831739 E_total: -35865.94768
+Kinetic energy: 0.549302
+Finalised timestep 7
+Finished timestep 7 of 100
+Current flop count SP: 0 FLOPS, DP: 48.16851 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 50.340922 PFLOPS
+Timestep 8 took 2.749705
+Current total flops: SP: 0 FLOPS, DP: 51.774888 PFLOPS
+Finalising timestep 8 of 100
+Current total flops: SP: 0 FLOPS, DP: 52.799115 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.58054 E_MP2_OS: -84.04404774 E_MP2_SS: -30.28105392 E_MP2: -114.3251017 E_total: -35865.90564
+Kinetic energy: 0.515965
+Finalised timestep 8
+Finished timestep 8 of 100
+Current flop count SP: 0 FLOPS, DP: 54.029653 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 56.199515 PFLOPS
+Timestep 9 took 2.731404
+Current total flops: SP: 0 FLOPS, DP: 57.592175 PFLOPS
+Finalising timestep 9 of 100
+Current total flops: SP: 0 FLOPS, DP: 58.630756 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.54261 E_MP2_OS: -84.01412139 E_MP2_SS: -30.27451028 E_MP2: -114.2886317 E_total: -35865.83124
+Kinetic energy: 0.447005
+Finalised timestep 9
+Finished timestep 9 of 100
+Current flop count SP: 0 FLOPS, DP: 59.848439 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 62.029392 PFLOPS
+Timestep 10 took 2.727746
+Current total flops: SP: 0 FLOPS, DP: 63.427652 PFLOPS
+Finalising timestep 10 of 100
+Current total flops: SP: 0 FLOPS, DP: 64.455912 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.48229 E_MP2_OS: -84.01564894 E_MP2_SS: -30.27844464 E_MP2: -114.2940936 E_total: -35865.77639
+Kinetic energy: 0.395286
+Finalised timestep 10
+Finished timestep 10 of 100
+Current flop count SP: 0 FLOPS, DP: 65.696868 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 67.872051 PFLOPS
+Timestep 11 took 2.717572
+Current total flops: SP: 0 FLOPS, DP: 69.244902 PFLOPS
+Finalising timestep 11 of 100
+Current total flops: SP: 0 FLOPS, DP: 70.28871 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.42517 E_MP2_OS: -84.05522863 E_MP2_SS: -30.2930324 E_MP2: -114.348261 E_total: -35865.77343
+Kinetic energy: 0.391571
+Finalised timestep 11
+Finished timestep 11 of 100
+Current flop count SP: 0 FLOPS, DP: 71.562537 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 73.715969 PFLOPS
+Timestep 12 took 2.711697
+Current total flops: SP: 0 FLOPS, DP: 75.07761 PFLOPS
+Finalising timestep 12 of 100
+Current total flops: SP: 0 FLOPS, DP: 76.065378 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.37796 E_MP2_OS: -84.12314325 E_MP2_SS: -30.31335997 E_MP2: -114.4365032 E_total: -35865.81446
+Kinetic energy: 0.429889
+Finalised timestep 12
+Finished timestep 12 of 100
+Current flop count SP: 0 FLOPS, DP: 77.411206 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 79.552793 PFLOPS
+Timestep 13 took 2.703529
+Current total flops: SP: 0 FLOPS, DP: 80.911407 PFLOPS
+Finalising timestep 13 of 100
+Current total flops: SP: 0 FLOPS, DP: 81.95428 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.34673 E_MP2_OS: -84.19771498 E_MP2_SS: -30.33127514 E_MP2: -114.5289901 E_total: -35865.87572
+Kinetic energy: 0.489717
+Finalised timestep 13
+Finished timestep 13 of 100
+Current flop count SP: 0 FLOPS, DP: 83.230787 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 85.391927 PFLOPS
+Timestep 14 took 2.699909
+Current total flops: SP: 0 FLOPS, DP: 86.7451 PFLOPS
+Finalising timestep 14 of 100
+Current total flops: SP: 0 FLOPS, DP: 87.798972 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.34238 E_MP2_OS: -84.25971247 E_MP2_SS: -30.34165748 E_MP2: -114.6013699 E_total: -35865.94375
+Kinetic energy: 0.551906
+Finalised timestep 14
+Finished timestep 14 of 100
+Current flop count SP: 0 FLOPS, DP: 89.072262 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 91.227721 PFLOPS
+Timestep 15 took 2.696099
+Current total flops: SP: 0 FLOPS, DP: 92.571658 PFLOPS
+Finalising timestep 15 of 100
+Current total flops: SP: 0 FLOPS, DP: 93.615467 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.37491 E_MP2_OS: -84.28919302 E_MP2_SS: -30.33923251 E_MP2: -114.6284255 E_total: -35866.00333
+Kinetic energy: 0.604870
+Finalised timestep 15
+Finished timestep 15 of 100
+Current flop count SP: 0 FLOPS, DP: 94.894381 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 97.067915 PFLOPS
+Timestep 16 took 2.684251
+Current total flops: SP: 0 FLOPS, DP: 98.411076 PFLOPS
+Finalising timestep 16 of 100
+Current total flops: SP: 0 FLOPS, DP: 99.46247 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.4493 E_MP2_OS: -84.27745589 E_MP2_SS: -30.32340204 E_MP2: -114.6008579 E_total: -35866.05015
+Kinetic energy: 0.647142
+Finalised timestep 16
+Finished timestep 16 of 100
+Current flop count SP: 0 FLOPS, DP: 100.74719 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 102.9028 PFLOPS
+Timestep 17 took 2.684006
+Current total flops: SP: 0 FLOPS, DP: 104.23816 PFLOPS
+Finalising timestep 17 of 100
+Current total flops: SP: 0 FLOPS, DP: 105.28931 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.55686 E_MP2_OS: -84.23208671 E_MP2_SS: -30.29917706 E_MP2: -114.5312638 E_total: -35866.08812
+Kinetic energy: 0.681128
+Finalised timestep 17
+Finished timestep 17 of 100
+Current flop count SP: 0 FLOPS, DP: 106.57783 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 108.74895 PFLOPS
+Timestep 18 took 2.675165
+Current total flops: SP: 0 FLOPS, DP: 110.05634 PFLOPS
+Finalising timestep 18 of 100
+Current total flops: SP: 0 FLOPS, DP: 111.12216 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.67174 E_MP2_OS: -84.16800889 E_MP2_SS: -30.27299878 E_MP2: -114.4410077 E_total: -35866.11275
+Kinetic energy: 0.703898
+Finalised timestep 18
+Finished timestep 18 of 100
+Current flop count SP: 0 FLOPS, DP: 112.40732 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 114.57018 PFLOPS
+Timestep 19 took 2.677375
+Current total flops: SP: 0 FLOPS, DP: 115.88339 PFLOPS
+Finalising timestep 19 of 100
+Current total flops: SP: 0 FLOPS, DP: 116.94283 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.7539 E_MP2_OS: -84.10666385 E_MP2_SS: -30.25201566 E_MP2: -114.3586795 E_total: -35866.11257
+Kinetic energy: 0.701888
+Finalised timestep 19
+Finished timestep 19 of 100
+Current flop count SP: 0 FLOPS, DP: 118.23557 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 120.41111 PFLOPS
+Timestep 20 took 2.665776
+Current total flops: SP: 0 FLOPS, DP: 121.70843 PFLOPS
+Finalising timestep 20 of 100
+Current total flops: SP: 0 FLOPS, DP: 122.72676 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.77372 E_MP2_OS: -84.06362368 E_MP2_SS: -30.23970983 E_MP2: -114.3033335 E_total: -35866.07705
+Kinetic energy: 0.666633
+Finalised timestep 20
+Finished timestep 20 of 100
+Current flop count SP: 0 FLOPS, DP: 124.06756 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 126.23732 PFLOPS
+Timestep 21 took 2.664989
+Current total flops: SP: 0 FLOPS, DP: 127.53084 PFLOPS
+Finalising timestep 21 of 100
+Current total flops: SP: 0 FLOPS, DP: 128.59538 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.74804 E_MP2_OS: -84.04640208 E_MP2_SS: -30.23579306 E_MP2: -114.2821951 E_total: -35866.03024
+Kinetic energy: 0.622791
+Finalised timestep 21
+Finished timestep 21 of 100
+Current flop count SP: 0 FLOPS, DP: 129.89538 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 132.06791 PFLOPS
+Timestep 22 took 2.658097
+Current total flops: SP: 0 FLOPS, DP: 133.35751 PFLOPS
+Finalising timestep 22 of 100
+Current total flops: SP: 0 FLOPS, DP: 134.38501 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.72803 E_MP2_OS: -84.05443044 E_MP2_SS: -30.23760892 E_MP2: -114.2920394 E_total: -35866.02007
+Kinetic energy: 0.613907
+Finalised timestep 22
+Finished timestep 22 of 100
+Current flop count SP: 0 FLOPS, DP: 135.71371 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 137.88915 PFLOPS
+Timestep 23 took 2.659473
+Current total flops: SP: 0 FLOPS, DP: 139.18122 PFLOPS
+Finalising timestep 23 of 100
+Current total flops: SP: 0 FLOPS, DP: 140.27915 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.73657 E_MP2_OS: -84.0792676 E_MP2_SS: -30.24120408 E_MP2: -114.3204717 E_total: -35866.05704
+Kinetic energy: 0.649505
+Finalised timestep 23
+Finished timestep 23 of 100
+Current flop count SP: 0 FLOPS, DP: 141.52202 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 143.71831 PFLOPS
+Timestep 24 took 2.654884
+Current total flops: SP: 0 FLOPS, DP: 145.00371 PFLOPS
+Finalising timestep 24 of 100
+Current total flops: SP: 0 FLOPS, DP: 146.03285 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.75285 E_MP2_OS: -84.10695911 E_MP2_SS: -30.24249125 E_MP2: -114.3494504 E_total: -35866.1023
+Kinetic energy: 0.695349
+Finalised timestep 24
+Finished timestep 24 of 100
+Current flop count SP: 0 FLOPS, DP: 147.37065 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 149.54942 PFLOPS
+Timestep 25 took 2.652657
+Current total flops: SP: 0 FLOPS, DP: 150.82928 PFLOPS
+Finalising timestep 25 of 100
+Current total flops: SP: 0 FLOPS, DP: 151.84905 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.75655 E_MP2_OS: -84.12516457 E_MP2_SS: -30.23970595 E_MP2: -114.3648705 E_total: -35866.12142
+Kinetic energy: 0.719356
+Finalised timestep 25
+Finished timestep 25 of 100
+Current flop count SP: 0 FLOPS, DP: 153.19732 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 155.37139 PFLOPS
+Timestep 26 took 2.650285
+Current total flops: SP: 0 FLOPS, DP: 156.65317 PFLOPS
+Finalising timestep 26 of 100
+Current total flops: SP: 0 FLOPS, DP: 157.73923 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.76113 E_MP2_OS: -84.12733869 E_MP2_SS: -30.23338631 E_MP2: -114.360725 E_total: -35866.12186
+Kinetic energy: 0.727268
+Finalised timestep 26
+Finished timestep 26 of 100
+Current flop count SP: 0 FLOPS, DP: 159.01114 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 161.1979 PFLOPS
+Timestep 27 took 2.649647
+Current total flops: SP: 0 FLOPS, DP: 162.47881 PFLOPS
+Finalising timestep 27 of 100
+Current total flops: SP: 0 FLOPS, DP: 163.497 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.79744 E_MP2_OS: -84.11333944 E_MP2_SS: -30.22593081 E_MP2: -114.3392702 E_total: -35866.13671
+Kinetic energy: 0.747675
+Finalised timestep 27
+Finished timestep 27 of 100
+Current flop count SP: 0 FLOPS, DP: 164.85915 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 167.03555 PFLOPS
+Timestep 28 took 2.644932
+Current total flops: SP: 0 FLOPS, DP: 168.30327 PFLOPS
+Finalising timestep 28 of 100
+Current total flops: SP: 0 FLOPS, DP: 169.39899 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.86917 E_MP2_OS: -84.08640615 E_MP2_SS: -30.21924526 E_MP2: -114.3056514 E_total: -35866.17482
+Kinetic energy: 0.789429
+Finalised timestep 28
+Finished timestep 28 of 100
+Current flop count SP: 0 FLOPS, DP: 170.67473 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 172.86872 PFLOPS
+Timestep 29 took 2.644378
+Current total flops: SP: 0 FLOPS, DP: 174.12912 PFLOPS
+Finalising timestep 29 of 100
+Current total flops: SP: 0 FLOPS, DP: 175.22403 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.94177 E_MP2_OS: -84.05423386 E_MP2_SS: -30.21512111 E_MP2: -114.269355 E_total: -35866.21112
+Kinetic energy: 0.827985
+Finalised timestep 29
+Finished timestep 29 of 100
+Current flop count SP: 0 FLOPS, DP: 176.49626 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 178.70228 PFLOPS
+Timestep 30 took 2.646386
+Current total flops: SP: 0 FLOPS, DP: 179.96829 PFLOPS
+Finalising timestep 30 of 100
+Current total flops: SP: 0 FLOPS, DP: 181.03977 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.97965 E_MP2_OS: -84.02245558 E_MP2_SS: -30.21327617 E_MP2: -114.2357317 E_total: -35866.21538
+Kinetic energy: 0.837744
+Finalised timestep 30
+Finished timestep 30 of 100
+Current flop count SP: 0 FLOPS, DP: 182.32655 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 184.529 PFLOPS
+Timestep 31 took 2.646962
+Current total flops: SP: 0 FLOPS, DP: 185.79828 PFLOPS
+Finalising timestep 31 of 100
+Current total flops: SP: 0 FLOPS, DP: 186.89388 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98472 E_MP2_OS: -84.0009122 E_MP2_SS: -30.21399552 E_MP2: -114.2149077 E_total: -35866.19962
+Kinetic energy: 0.825725
+Finalised timestep 31
+Finished timestep 31 of 100
+Current flop count SP: 0 FLOPS, DP: 188.19233 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 190.36929 PFLOPS
+Timestep 32 took 2.636947
+Current total flops: SP: 0 FLOPS, DP: 191.6265 PFLOPS
+Finalising timestep 32 of 100
+Current total flops: SP: 0 FLOPS, DP: 192.71621 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98832 E_MP2_OS: -83.99230017 E_MP2_SS: -30.2152781 E_MP2: -114.2075783 E_total: -35866.1959
+Kinetic energy: 0.824025
+Finalised timestep 32
+Finished timestep 32 of 100
+Current flop count SP: 0 FLOPS, DP: 194.01062 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 196.19551 PFLOPS
+Timestep 33 took 2.635424
+Current total flops: SP: 0 FLOPS, DP: 197.45935 PFLOPS
+Finalising timestep 33 of 100
+Current total flops: SP: 0 FLOPS, DP: 198.54945 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.0099 E_MP2_OS: -83.99885599 E_MP2_SS: -30.21649106 E_MP2: -114.2153471 E_total: -35866.22525
+Kinetic energy: 0.850786
+Finalised timestep 33
+Finished timestep 33 of 100
+Current flop count SP: 0 FLOPS, DP: 199.84208 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 202.02893 PFLOPS
+Timestep 34 took 2.633401
+Current total flops: SP: 0 FLOPS, DP: 203.29249 PFLOPS
+Finalising timestep 34 of 100
+Current total flops: SP: 0 FLOPS, DP: 204.38685 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.02955 E_MP2_OS: -84.0184424 E_MP2_SS: -30.21753893 E_MP2: -114.2359813 E_total: -35866.26553
+Kinetic energy: 0.885848
+Finalised timestep 34
+Finished timestep 34 of 100
+Current flop count SP: 0 FLOPS, DP: 205.64468 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 207.85017 PFLOPS
+Timestep 35 took 2.635393
+Current total flops: SP: 0 FLOPS, DP: 209.11157 PFLOPS
+Finalising timestep 35 of 100
+Current total flops: SP: 0 FLOPS, DP: 210.21035 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.01522 E_MP2_OS: -84.04814241 E_MP2_SS: -30.21968568 E_MP2: -114.2678281 E_total: -35866.28305
+Kinetic energy: 0.895776
+Finalised timestep 35
+Finished timestep 35 of 100
+Current flop count SP: 0 FLOPS, DP: 211.49583 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 213.68292 PFLOPS
+Timestep 36 took 2.630081
+Current total flops: SP: 0 FLOPS, DP: 214.94133 PFLOPS
+Finalising timestep 36 of 100
+Current total flops: SP: 0 FLOPS, DP: 216.02753 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.96948 E_MP2_OS: -84.07501272 E_MP2_SS: -30.22098983 E_MP2: -114.2960026 E_total: -35866.26548
+Kinetic energy: 0.876425
+Finalised timestep 36
+Finished timestep 36 of 100
+Current flop count SP: 0 FLOPS, DP: 217.33065 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 219.52031 PFLOPS
+Timestep 37 took 2.627717
+Current total flops: SP: 0 FLOPS, DP: 220.77088 PFLOPS
+Finalising timestep 37 of 100
+Current total flops: SP: 0 FLOPS, DP: 221.8094 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.93116 E_MP2_OS: -84.09593207 E_MP2_SS: -30.22281172 E_MP2: -114.3187438 E_total: -35866.2499
+Kinetic energy: 0.854819
+Finalised timestep 37
+Finished timestep 37 of 100
+Current flop count SP: 0 FLOPS, DP: 223.15942 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 225.34158 PFLOPS
+Timestep 38 took 2.626014
+Current total flops: SP: 0 FLOPS, DP: 226.5874 PFLOPS
+Finalising timestep 38 of 100
+Current total flops: SP: 0 FLOPS, DP: 227.64116 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.93372 E_MP2_OS: -84.09845899 E_MP2_SS: -30.22147283 E_MP2: -114.3199318 E_total: -35866.25365
+Kinetic energy: 0.854129
+Finalised timestep 38
+Finished timestep 38 of 100
+Current flop count SP: 0 FLOPS, DP: 228.99106 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 231.1579 PFLOPS
+Timestep 39 took 2.626677
+Current total flops: SP: 0 FLOPS, DP: 232.41065 PFLOPS
+Finalising timestep 39 of 100
+Current total flops: SP: 0 FLOPS, DP: 233.5065 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.97755 E_MP2_OS: -84.07925781 E_MP2_SS: -30.21531976 E_MP2: -114.2945776 E_total: -35866.27213
+Kinetic energy: 0.869637
+Finalised timestep 39
+Finished timestep 39 of 100
+Current flop count SP: 0 FLOPS, DP: 234.82006 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 236.99749 PFLOPS
+Timestep 40 took 2.616759
+Current total flops: SP: 0 FLOPS, DP: 238.23254 PFLOPS
+Finalising timestep 40 of 100
+Current total flops: SP: 0 FLOPS, DP: 239.32734 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.03586 E_MP2_OS: -84.0423697 E_MP2_SS: -30.20438331 E_MP2: -114.246753 E_total: -35866.28261
+Kinetic energy: 0.877587
+Finalised timestep 40
+Finished timestep 40 of 100
+Current flop count SP: 0 FLOPS, DP: 240.63263 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 242.80863 PFLOPS
+Timestep 41 took 2.616709
+Current total flops: SP: 0 FLOPS, DP: 244.05683 PFLOPS
+Finalising timestep 41 of 100
+Current total flops: SP: 0 FLOPS, DP: 245.13465 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.0859 E_MP2_OS: -83.99564502 E_MP2_SS: -30.18915202 E_MP2: -114.184797 E_total: -35866.2707
+Kinetic energy: 0.866047
+Finalised timestep 41
+Finished timestep 41 of 100
+Current flop count SP: 0 FLOPS, DP: 246.46021 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 248.6232 PFLOPS
+Timestep 42 took 2.623799
+Current total flops: SP: 0 FLOPS, DP: 249.87015 PFLOPS
+Finalising timestep 42 of 100
+Current total flops: SP: 0 FLOPS, DP: 250.90452 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.12814 E_MP2_OS: -83.95371818 E_MP2_SS: -30.17272496 E_MP2: -114.1264431 E_total: -35866.25458
+Kinetic energy: 0.851032
+Finalised timestep 42
+Finished timestep 42 of 100
+Current flop count SP: 0 FLOPS, DP: 252.27827 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 254.45443 PFLOPS
+Timestep 43 took 2.614014
+Current total flops: SP: 0 FLOPS, DP: 255.692 PFLOPS
+Finalising timestep 43 of 100
+Current total flops: SP: 0 FLOPS, DP: 256.72324 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.16856 E_MP2_OS: -83.93076185 E_MP2_SS: -30.15905137 E_MP2: -114.0898132 E_total: -35866.25837
+Kinetic energy: 0.855349
+Finalised timestep 43
+Finished timestep 43 of 100
+Current flop count SP: 0 FLOPS, DP: 258.08406 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 260.25579 PFLOPS
+Timestep 44 took 2.614155
+Current total flops: SP: 0 FLOPS, DP: 261.50022 PFLOPS
+Finalising timestep 44 of 100
+Current total flops: SP: 0 FLOPS, DP: 262.61486 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.1922 E_MP2_OS: -83.9383 E_MP2_SS: -30.15265726 E_MP2: -114.0909573 E_total: -35866.28315
+Kinetic energy: 0.878211
+Finalised timestep 44
+Finished timestep 44 of 100
+Current flop count SP: 0 FLOPS, DP: 263.87276 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 266.08089 PFLOPS
+Timestep 45 took 2.613985
+Current total flops: SP: 0 FLOPS, DP: 267.3167 PFLOPS
+Finalising timestep 45 of 100
+Current total flops: SP: 0 FLOPS, DP: 268.4184 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.17015 E_MP2_OS: -83.97568343 E_MP2_SS: -30.15511476 E_MP2: -114.1307982 E_total: -35866.30095
+Kinetic energy: 0.896162
+Finalised timestep 45
+Finished timestep 45 of 100
+Current flop count SP: 0 FLOPS, DP: 269.72136 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 271.90611 PFLOPS
+Timestep 46 took 2.610789
+Current total flops: SP: 0 FLOPS, DP: 273.13034 PFLOPS
+Finalising timestep 46 of 100
+Current total flops: SP: 0 FLOPS, DP: 274.22826 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.0932 E_MP2_OS: -84.03406124 E_MP2_SS: -30.16571926 E_MP2: -114.1997805 E_total: -35866.29298
+Kinetic energy: 0.891323
+Finalised timestep 46
+Finished timestep 46 of 100
+Current flop count SP: 0 FLOPS, DP: 275.54515 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 277.72193 PFLOPS
+Timestep 47 took 2.606941
+Current total flops: SP: 0 FLOPS, DP: 278.95191 PFLOPS
+Finalising timestep 47 of 100
+Current total flops: SP: 0 FLOPS, DP: 280.04988 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98794 E_MP2_OS: -84.096587 E_MP2_SS: -30.18054618 E_MP2: -114.2771332 E_total: -35866.26508
+Kinetic energy: 0.868940
+Finalised timestep 47
+Finished timestep 47 of 100
+Current flop count SP: 0 FLOPS, DP: 281.3481 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 283.52351 PFLOPS
+Timestep 48 took 2.605204
+Current total flops: SP: 0 FLOPS, DP: 284.7573 PFLOPS
+Finalising timestep 48 of 100
+Current total flops: SP: 0 FLOPS, DP: 286.04703 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.89794 E_MP2_OS: -84.14334512 E_MP2_SS: -30.19344156 E_MP2: -114.3367867 E_total: -35866.23473
+Kinetic energy: 0.845870
+Finalised timestep 48
+Finished timestep 48 of 100
+Current flop count SP: 0 FLOPS, DP: 287.16004 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 289.34648 PFLOPS
+Timestep 49 took 2.607558
+Current total flops: SP: 0 FLOPS, DP: 290.56877 PFLOPS
+Finalising timestep 49 of 100
+Current total flops: SP: 0 FLOPS, DP: 291.60076 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.85508 E_MP2_OS: -84.1617807 E_MP2_SS: -30.19977491 E_MP2: -114.3615556 E_total: -35866.21664
+Kinetic energy: 0.832402
+Finalised timestep 49
+Finished timestep 49 of 100
+Current flop count SP: 0 FLOPS, DP: 292.97062 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 295.15032 PFLOPS
+Timestep 50 took 2.611074
+Current total flops: SP: 0 FLOPS, DP: 296.38536 PFLOPS
+Finalising timestep 50 of 100
+Current total flops: SP: 0 FLOPS, DP: 297.48144 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.86761 E_MP2_OS: -84.14621003 E_MP2_SS: -30.19638526 E_MP2: -114.3425953 E_total: -35866.21021
+Kinetic energy: 0.828141
+Finalised timestep 50
+Finished timestep 50 of 100
+Current flop count SP: 0 FLOPS, DP: 298.77729 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 300.97021 PFLOPS
+Timestep 51 took 2.606102
+Current total flops: SP: 0 FLOPS, DP: 302.19606 PFLOPS
+Finalising timestep 51 of 100
+Current total flops: SP: 0 FLOPS, DP: 303.30438 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.92064 E_MP2_OS: -84.10055253 E_MP2_SS: -30.18286732 E_MP2: -114.2834199 E_total: -35866.20406
+Kinetic energy: 0.826500
+Finalised timestep 51
+Finished timestep 51 of 100
+Current flop count SP: 0 FLOPS, DP: 304.58966 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 306.78049 PFLOPS
+Timestep 52 took 2.608899
+Current total flops: SP: 0 FLOPS, DP: 308.01484 PFLOPS
+Finalising timestep 52 of 100
+Current total flops: SP: 0 FLOPS, DP: 309.1141 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98784 E_MP2_OS: -84.04691539 E_MP2_SS: -30.16561415 E_MP2: -114.2125295 E_total: -35866.20037
+Kinetic energy: 0.823227
+Finalised timestep 52
+Finished timestep 52 of 100
+Current flop count SP: 0 FLOPS, DP: 310.42726 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 312.60043 PFLOPS
+Timestep 53 took 2.609629
+Current total flops: SP: 0 FLOPS, DP: 313.83682 PFLOPS
+Finalising timestep 53 of 100
+Current total flops: SP: 0 FLOPS, DP: 314.87487 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.04748 E_MP2_OS: -84.00292363 E_MP2_SS: -30.14955009 E_MP2: -114.1524737 E_total: -35866.19995
+Kinetic energy: 0.824596
+Finalised timestep 53
+Finished timestep 53 of 100
+Current flop count SP: 0 FLOPS, DP: 316.23533 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 318.41351 PFLOPS
+Timestep 54 took 2.607023
+Current total flops: SP: 0 FLOPS, DP: 319.65257 PFLOPS
+Finalising timestep 54 of 100
+Current total flops: SP: 0 FLOPS, DP: 320.74285 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.09063 E_MP2_OS: -83.98887526 E_MP2_SS: -30.14146582 E_MP2: -114.1303411 E_total: -35866.22097
+Kinetic energy: 0.843540
+Finalised timestep 54
+Finished timestep 54 of 100
+Current flop count SP: 0 FLOPS, DP: 322.04527 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 324.24344 PFLOPS
+Timestep 55 took 2.603430
+Current total flops: SP: 0 FLOPS, DP: 325.46128 PFLOPS
+Finalising timestep 55 of 100
+Current total flops: SP: 0 FLOPS, DP: 326.49837 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.10951 E_MP2_OS: -84.01008101 E_MP2_SS: -30.14393074 E_MP2: -114.1540117 E_total: -35866.26352
+Kinetic energy: 0.880926
+Finalised timestep 55
+Finished timestep 55 of 100
+Current flop count SP: 0 FLOPS, DP: 327.87076 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 330.04911 PFLOPS
+Timestep 56 took 2.605838
+Current total flops: SP: 0 FLOPS, DP: 331.26742 PFLOPS
+Finalising timestep 56 of 100
+Current total flops: SP: 0 FLOPS, DP: 332.32083 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.09084 E_MP2_OS: -84.05697915 E_MP2_SS: -30.15489559 E_MP2: -114.2118747 E_total: -35866.30271
+Kinetic energy: 0.915475
+Finalised timestep 56
+Finished timestep 56 of 100
+Current flop count SP: 0 FLOPS, DP: 333.66119 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 335.85436 PFLOPS
+Timestep 57 took 2.606326
+Current total flops: SP: 0 FLOPS, DP: 337.0774 PFLOPS
+Finalising timestep 57 of 100
+Current total flops: SP: 0 FLOPS, DP: 338.12453 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.03189 E_MP2_OS: -84.11345185 E_MP2_SS: -30.17032965 E_MP2: -114.2837815 E_total: -35866.31568
+Kinetic energy: 0.921266
+Finalised timestep 57
+Finished timestep 57 of 100
+Current flop count SP: 0 FLOPS, DP: 339.49997 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 341.67478 PFLOPS
+Timestep 58 took 2.595050
+Current total flops: SP: 0 FLOPS, DP: 342.8828 PFLOPS
+Finalising timestep 58 of 100
+Current total flops: SP: 0 FLOPS, DP: 343.98718 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.96229 E_MP2_OS: -84.1510696 E_MP2_SS: -30.18078657 E_MP2: -114.3318562 E_total: -35866.29415
+Kinetic energy: 0.897248
+Finalised timestep 58
+Finished timestep 58 of 100
+Current flop count SP: 0 FLOPS, DP: 345.27439 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 347.47529 PFLOPS
+Timestep 59 took 2.599871
+Current total flops: SP: 0 FLOPS, DP: 348.68876 PFLOPS
+Finalising timestep 59 of 100
+Current total flops: SP: 0 FLOPS, DP: 349.79411 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.93498 E_MP2_OS: -84.15345847 E_MP2_SS: -30.18087535 E_MP2: -114.3343338 E_total: -35866.26932
+Kinetic energy: 0.869674
+Finalised timestep 59
+Finished timestep 59 of 100
+Current flop count SP: 0 FLOPS, DP: 351.09475 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 353.28264 PFLOPS
+Timestep 60 took 2.599117
+Current total flops: SP: 0 FLOPS, DP: 354.49665 PFLOPS
+Finalising timestep 60 of 100
+Current total flops: SP: 0 FLOPS, DP: 355.54877 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98073 E_MP2_OS: -84.11301027 E_MP2_SS: -30.16776462 E_MP2: -114.2807749 E_total: -35866.2615
+Kinetic energy: 0.860434
+Finalised timestep 60
+Finished timestep 60 of 100
+Current flop count SP: 0 FLOPS, DP: 356.90787 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 359.09478 PFLOPS
+Timestep 61 took 2.594109
+Current total flops: SP: 0 FLOPS, DP: 360.30477 PFLOPS
+Finalising timestep 61 of 100
+Current total flops: SP: 0 FLOPS, DP: 361.3725 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.07707 E_MP2_OS: -84.04249017 E_MP2_SS: -30.14550878 E_MP2: -114.1879989 E_total: -35866.26507
+Kinetic energy: 0.860793
+Finalised timestep 61
+Finished timestep 61 of 100
+Current flop count SP: 0 FLOPS, DP: 362.70506 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 364.89786 PFLOPS
+Timestep 62 took 2.600999
+Current total flops: SP: 0 FLOPS, DP: 366.11146 PFLOPS
+Finalising timestep 62 of 100
+Current total flops: SP: 0 FLOPS, DP: 367.15185 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.16894 E_MP2_OS: -83.96195076 E_MP2_SS: -30.12019599 E_MP2: -114.0821468 E_total: -35866.25108
+Kinetic energy: 0.847219
+Finalised timestep 62
+Finished timestep 62 of 100
+Current flop count SP: 0 FLOPS, DP: 368.54175 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 370.71368 PFLOPS
+Timestep 63 took 2.594748
+Current total flops: SP: 0 FLOPS, DP: 371.92051 PFLOPS
+Finalising timestep 63 of 100
+Current total flops: SP: 0 FLOPS, DP: 372.96751 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.22184 E_MP2_OS: -83.89874042 E_MP2_SS: -30.1003645 E_MP2: -113.9991049 E_total: -35866.22094
+Kinetic energy: 0.820027
+Finalised timestep 63
+Finished timestep 63 of 100
+Current flop count SP: 0 FLOPS, DP: 374.34757 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 376.51461 PFLOPS
+Timestep 64 took 2.590492
+Current total flops: SP: 0 FLOPS, DP: 377.72688 PFLOPS
+Finalising timestep 64 of 100
+Current total flops: SP: 0 FLOPS, DP: 378.82654 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.24104 E_MP2_OS: -83.87405866 E_MP2_SS: -30.09249775 E_MP2: -113.9665564 E_total: -35866.20759
+Kinetic energy: 0.808940
+Finalised timestep 64
+Finished timestep 64 of 100
+Current flop count SP: 0 FLOPS, DP: 380.13604 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 382.31681 PFLOPS
+Timestep 65 took 2.596868
+Current total flops: SP: 0 FLOPS, DP: 383.52939 PFLOPS
+Finalising timestep 65 of 100
+Current total flops: SP: 0 FLOPS, DP: 384.73348 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.23861 E_MP2_OS: -83.89541025 E_MP2_SS: -30.09859998 E_MP2: -113.9940102 E_total: -35866.23262
+Kinetic energy: 0.833599
+Finalised timestep 65
+Finished timestep 65 of 100
+Current flop count SP: 0 FLOPS, DP: 385.93055 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 388.12833 PFLOPS
+Timestep 66 took 2.597243
+Current total flops: SP: 0 FLOPS, DP: 389.35199 PFLOPS
+Finalising timestep 66 of 100
+Current total flops: SP: 0 FLOPS, DP: 390.41422 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.20288 E_MP2_OS: -83.95345206 E_MP2_SS: -30.11571691 E_MP2: -114.069169 E_total: -35866.27205
+Kinetic energy: 0.872293
+Finalised timestep 66
+Finished timestep 66 of 100
+Current flop count SP: 0 FLOPS, DP: 391.78615 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 393.9448 PFLOPS
+Timestep 67 took 2.594850
+Current total flops: SP: 0 FLOPS, DP: 395.15328 PFLOPS
+Finalising timestep 67 of 100
+Current total flops: SP: 0 FLOPS, DP: 396.18237 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.12113 E_MP2_OS: -84.02496387 E_MP2_SS: -30.13656189 E_MP2: -114.1615258 E_total: -35866.28266
+Kinetic energy: 0.887180
+Finalised timestep 67
+Finished timestep 67 of 100
+Current flop count SP: 0 FLOPS, DP: 397.59256 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 399.75538 PFLOPS
+Timestep 68 took 2.591289
+Current total flops: SP: 0 FLOPS, DP: 400.96543 PFLOPS
+Finalising timestep 68 of 100
+Current total flops: SP: 0 FLOPS, DP: 402.05664 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.01954 E_MP2_OS: -84.08759245 E_MP2_SS: -30.1544505 E_MP2: -114.242043 E_total: -35866.26158
+Kinetic energy: 0.870448
+Finalised timestep 68
+Finished timestep 68 of 100
+Current flop count SP: 0 FLOPS, DP: 403.41036 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 405.56412 PFLOPS
+Timestep 69 took 2.596186
+Current total flops: SP: 0 FLOPS, DP: 406.77337 PFLOPS
+Finalising timestep 69 of 100
+Current total flops: SP: 0 FLOPS, DP: 407.7853 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.95233 E_MP2_OS: -84.11906589 E_MP2_SS: -30.16234892 E_MP2: -114.2814148 E_total: -35866.23374
+Kinetic energy: 0.846510
+Finalised timestep 69
+Finished timestep 69 of 100
+Current flop count SP: 0 FLOPS, DP: 409.22503 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 411.37766 PFLOPS
+Timestep 70 took 2.588662
+Current total flops: SP: 0 FLOPS, DP: 412.58136 PFLOPS
+Finalising timestep 70 of 100
+Current total flops: SP: 0 FLOPS, DP: 413.59245 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.95175 E_MP2_OS: -84.10893293 E_MP2_SS: -30.15733902 E_MP2: -114.266272 E_total: -35866.21802
+Kinetic energy: 0.835300
+Finalised timestep 70
+Finished timestep 70 of 100
+Current flop count SP: 0 FLOPS, DP: 415.00891 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 417.18657 PFLOPS
+Timestep 71 took 2.595701
+Current total flops: SP: 0 FLOPS, DP: 418.40193 PFLOPS
+Finalising timestep 71 of 100
+Current total flops: SP: 0 FLOPS, DP: 419.41221 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.00248 E_MP2_OS: -84.06552733 E_MP2_SS: -30.14269274 E_MP2: -114.2082201 E_total: -35866.2107
+Kinetic energy: 0.830888
+Finalised timestep 71
+Finished timestep 71 of 100
+Current flop count SP: 0 FLOPS, DP: 420.81825 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 423.004 PFLOPS
+Timestep 72 took 2.595830
+Current total flops: SP: 0 FLOPS, DP: 424.21129 PFLOPS
+Finalising timestep 72 of 100
+Current total flops: SP: 0 FLOPS, DP: 425.2543 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.06282 E_MP2_OS: -84.00794973 E_MP2_SS: -30.12509332 E_MP2: -114.133043 E_total: -35866.19587
+Kinetic energy: 0.817172
+Finalised timestep 72
+Finished timestep 72 of 100
+Current flop count SP: 0 FLOPS, DP: 426.64078 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 428.81719 PFLOPS
+Timestep 73 took 2.595504
+Current total flops: SP: 0 FLOPS, DP: 430.02142 PFLOPS
+Finalising timestep 73 of 100
+Current total flops: SP: 0 FLOPS, DP: 431.03164 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.10251 E_MP2_OS: -83.95820219 E_MP2_SS: -30.11130343 E_MP2: -114.0695056 E_total: -35866.17202
+Kinetic energy: 0.794379
+Finalised timestep 73
+Finished timestep 73 of 100
+Current flop count SP: 0 FLOPS, DP: 432.47356 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 434.62614 PFLOPS
+Timestep 74 took 2.590734
+Current total flops: SP: 0 FLOPS, DP: 435.83903 PFLOPS
+Finalising timestep 74 of 100
+Current total flops: SP: 0 FLOPS, DP: 436.93119 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.11859 E_MP2_OS: -83.93358663 E_MP2_SS: -30.10593479 E_MP2: -114.0395214 E_total: -35866.15812
+Kinetic energy: 0.782705
+Finalised timestep 74
+Finished timestep 74 of 100
+Current flop count SP: 0 FLOPS, DP: 438.26856 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 440.44021 PFLOPS
+Timestep 75 took 2.594537
+Current total flops: SP: 0 FLOPS, DP: 441.65032 PFLOPS
+Finalising timestep 75 of 100
+Current total flops: SP: 0 FLOPS, DP: 442.67834 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.11942 E_MP2_OS: -83.94380387 E_MP2_SS: -30.11096829 E_MP2: -114.0547722 E_total: -35866.17419
+Kinetic energy: 0.798563
+Finalised timestep 75
+Finished timestep 75 of 100
+Current flop count SP: 0 FLOPS, DP: 444.0685 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 446.24318 PFLOPS
+Timestep 76 took 2.593541
+Current total flops: SP: 0 FLOPS, DP: 447.46369 PFLOPS
+Finalising timestep 76 of 100
+Current total flops: SP: 0 FLOPS, DP: 448.57425 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.10443 E_MP2_OS: -83.98364303 E_MP2_SS: -30.12373499 E_MP2: -114.107378 E_total: -35866.21181
+Kinetic energy: 0.834381
+Finalised timestep 76
+Finished timestep 76 of 100
+Current flop count SP: 0 FLOPS, DP: 449.83236 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 452.05626 PFLOPS
+Timestep 77 took 2.597909
+Current total flops: SP: 0 FLOPS, DP: 453.26972 PFLOPS
+Finalising timestep 77 of 100
+Current total flops: SP: 0 FLOPS, DP: 454.36042 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.07108 E_MP2_OS: -84.03743609 E_MP2_SS: -30.13894489 E_MP2: -114.176381 E_total: -35866.24746
+Kinetic energy: 0.867699
+Finalised timestep 77
+Finished timestep 77 of 100
+Current flop count SP: 0 FLOPS, DP: 455.72268 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 457.89016 PFLOPS
+Timestep 78 took 2.589004
+Current total flops: SP: 0 FLOPS, DP: 459.08089 PFLOPS
+Finalising timestep 78 of 100
+Current total flops: SP: 0 FLOPS, DP: 460.17641 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.02877 E_MP2_OS: -84.08530603 E_MP2_SS: -30.15064552 E_MP2: -114.2359516 E_total: -35866.26473
+Kinetic energy: 0.882362
+Finalised timestep 78
+Finished timestep 78 of 100
+Current flop count SP: 0 FLOPS, DP: 461.53138 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 463.70271 PFLOPS
+Timestep 79 took 2.588140
+Current total flops: SP: 0 FLOPS, DP: 464.88902 PFLOPS
+Finalising timestep 79 of 100
+Current total flops: SP: 0 FLOPS, DP: 465.99849 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.99893 E_MP2_OS: -84.11287707 E_MP2_SS: -30.15545597 E_MP2: -114.268333 E_total: -35866.26727
+Kinetic energy: 0.878657
+Finalised timestep 79
+Finished timestep 79 of 100
+Current flop count SP: 0 FLOPS, DP: 467.33559 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 469.50407 PFLOPS
+Timestep 80 took 2.585740
+Current total flops: SP: 0 FLOPS, DP: 470.68559 PFLOPS
+Finalising timestep 80 of 100
+Current total flops: SP: 0 FLOPS, DP: 471.71354 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.00296 E_MP2_OS: -84.10731111 E_MP2_SS: -30.15029488 E_MP2: -114.257606 E_total: -35866.26056
+Kinetic energy: 0.868866
+Finalised timestep 80
+Finished timestep 80 of 100
+Current flop count SP: 0 FLOPS, DP: 473.12649 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 475.30504 PFLOPS
+Timestep 81 took 2.587803
+Current total flops: SP: 0 FLOPS, DP: 476.48488 PFLOPS
+Finalising timestep 81 of 100
+Current total flops: SP: 0 FLOPS, DP: 477.54289 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.04448 E_MP2_OS: -84.07274197 E_MP2_SS: -30.13782018 E_MP2: -114.2105622 E_total: -35866.25504
+Kinetic energy: 0.862770
+Finalised timestep 81
+Finished timestep 81 of 100
+Current flop count SP: 0 FLOPS, DP: 478.9436 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 481.11713 PFLOPS
+Timestep 82 took 2.581196
+Current total flops: SP: 0 FLOPS, DP: 482.2849 PFLOPS
+Finalising timestep 82 of 100
+Current total flops: SP: 0 FLOPS, DP: 483.43457 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.10224 E_MP2_OS: -84.02465957 E_MP2_SS: -30.12399274 E_MP2: -114.1486523 E_total: -35866.25089
+Kinetic energy: 0.857324
+Finalised timestep 82
+Finished timestep 82 of 100
+Current flop count SP: 0 FLOPS, DP: 484.72783 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 486.90601 PFLOPS
+Timestep 83 took 2.585241
+Current total flops: SP: 0 FLOPS, DP: 488.08499 PFLOPS
+Finalising timestep 83 of 100
+Current total flops: SP: 0 FLOPS, DP: 489.1027 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.14459 E_MP2_OS: -83.980245 E_MP2_SS: -30.11407501 E_MP2: -114.09432 E_total: -35866.23891
+Kinetic energy: 0.844007
+Finalised timestep 83
+Finished timestep 83 of 100
+Current flop count SP: 0 FLOPS, DP: 490.50413 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 492.6949 PFLOPS
+Timestep 84 took 2.589477
+Current total flops: SP: 0 FLOPS, DP: 493.88682 PFLOPS
+Finalising timestep 84 of 100
+Current total flops: SP: 0 FLOPS, DP: 494.94171 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.1545 E_MP2_OS: -83.95158065 E_MP2_SS: -30.1103006 E_MP2: -114.0618813 E_total: -35866.21638
+Kinetic energy: 0.824329
+Finalised timestep 84
+Finished timestep 84 of 100
+Current flop count SP: 0 FLOPS, DP: 496.33327 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 498.50577 PFLOPS
+Timestep 85 took 2.588991
+Current total flops: SP: 0 FLOPS, DP: 499.6903 PFLOPS
+Finalising timestep 85 of 100
+Current total flops: SP: 0 FLOPS, DP: 500.71012 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.13924 E_MP2_OS: -83.94950928 E_MP2_SS: -30.11420334 E_MP2: -114.0637126 E_total: -35866.20296
+Kinetic energy: 0.813463
+Finalised timestep 85
+Finished timestep 85 of 100
+Current flop count SP: 0 FLOPS, DP: 502.14315 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 504.31049 PFLOPS
+Timestep 86 took 2.584375
+Current total flops: SP: 0 FLOPS, DP: 505.48977 PFLOPS
+Finalising timestep 86 of 100
+Current total flops: SP: 0 FLOPS, DP: 506.55719 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.11766 E_MP2_OS: -83.97377521 E_MP2_SS: -30.12378724 E_MP2: -114.0975624 E_total: -35866.21522
+Kinetic energy: 0.825868
+Finalised timestep 86
+Finished timestep 86 of 100
+Current flop count SP: 0 FLOPS, DP: 507.94454 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 510.11569 PFLOPS
+Timestep 87 took 2.581114
+Current total flops: SP: 0 FLOPS, DP: 511.28406 PFLOPS
+Finalising timestep 87 of 100
+Current total flops: SP: 0 FLOPS, DP: 512.30017 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.09732 E_MP2_OS: -84.0147078 E_MP2_SS: -30.13494702 E_MP2: -114.1496548 E_total: -35866.24697
+Kinetic energy: 0.856210
+Finalised timestep 87
+Finished timestep 87 of 100
+Current flop count SP: 0 FLOPS, DP: 513.75101 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 515.89282 PFLOPS
+Timestep 88 took 2.585340
+Current total flops: SP: 0 FLOPS, DP: 517.08986 PFLOPS
+Finalising timestep 88 of 100
+Current total flops: SP: 0 FLOPS, DP: 518.13259 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.07267 E_MP2_OS: -84.05855351 E_MP2_SS: -30.14368806 E_MP2: -114.2022416 E_total: -35866.27491
+Kinetic energy: 0.882996
+Finalised timestep 88
+Finished timestep 88 of 100
+Current flop count SP: 0 FLOPS, DP: 519.52491 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 521.7118 PFLOPS
+Timestep 89 took 2.584116
+Current total flops: SP: 0 FLOPS, DP: 522.88341 PFLOPS
+Finalising timestep 89 of 100
+Current total flops: SP: 0 FLOPS, DP: 523.90957 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.04679 E_MP2_OS: -84.09244278 E_MP2_SS: -30.14747316 E_MP2: -114.2399159 E_total: -35866.28671
+Kinetic energy: 0.893171
+Finalised timestep 89
+Finished timestep 89 of 100
+Current flop count SP: 0 FLOPS, DP: 525.33559 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 527.50854 PFLOPS
+Timestep 90 took 2.583681
+Current total flops: SP: 0 FLOPS, DP: 528.69051 PFLOPS
+Finalising timestep 90 of 100
+Current total flops: SP: 0 FLOPS, DP: 529.80404 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.03474 E_MP2_OS: -84.10477329 E_MP2_SS: -30.14451432 E_MP2: -114.2492876 E_total: -35866.28403
+Kinetic energy: 0.891130
+Finalised timestep 90
+Finished timestep 90 of 100
+Current flop count SP: 0 FLOPS, DP: 531.07258 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 533.29839 PFLOPS
+Timestep 91 took 2.592249
+Current total flops: SP: 0 FLOPS, DP: 534.49275 PFLOPS
+Finalising timestep 91 of 100
+Current total flops: SP: 0 FLOPS, DP: 535.60159 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.04842 E_MP2_OS: -84.09358352 E_MP2_SS: -30.13616049 E_MP2: -114.229744 E_total: -35866.27817
+Kinetic energy: 0.886683
+Finalised timestep 91
+Finished timestep 91 of 100
+Current flop count SP: 0 FLOPS, DP: 536.92809 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 539.11845 PFLOPS
+Timestep 92 took 2.585533
+Current total flops: SP: 0 FLOPS, DP: 540.30103 PFLOPS
+Finalising timestep 92 of 100
+Current total flops: SP: 0 FLOPS, DP: 541.33609 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.08643 E_MP2_OS: -84.0618773 E_MP2_SS: -30.12445482 E_MP2: -114.1863321 E_total: -35866.27277
+Kinetic energy: 0.884507
+Finalised timestep 92
+Finished timestep 92 of 100
+Current flop count SP: 0 FLOPS, DP: 542.74175 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 544.91891 PFLOPS
+Timestep 93 took 2.584322
+Current total flops: SP: 0 FLOPS, DP: 546.10201 PFLOPS
+Finalising timestep 93 of 100
+Current total flops: SP: 0 FLOPS, DP: 547.19914 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.13241 E_MP2_OS: -84.02072182 E_MP2_SS: -30.1132117 E_MP2: -114.1339335 E_total: -35866.26635
+Kinetic energy: 0.879933
+Finalised timestep 93
+Finished timestep 93 of 100
+Current flop count SP: 0 FLOPS, DP: 548.54843 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 550.72032 PFLOPS
+Timestep 94 took 2.585160
+Current total flops: SP: 0 FLOPS, DP: 551.90789 PFLOPS
+Finalising timestep 94 of 100
+Current total flops: SP: 0 FLOPS, DP: 552.94105 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.16404 E_MP2_OS: -83.98087025 E_MP2_SS: -30.10450578 E_MP2: -114.085376 E_total: -35866.24941
+Kinetic energy: 0.864257
+Finalised timestep 94
+Finished timestep 94 of 100
+Current flop count SP: 0 FLOPS, DP: 554.33685 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 556.52535 PFLOPS
+Timestep 95 took 2.584253
+Current total flops: SP: 0 FLOPS, DP: 557.71435 PFLOPS
+Finalising timestep 95 of 100
+Current total flops: SP: 0 FLOPS, DP: 558.92322 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.17317 E_MP2_OS: -83.94907032 E_MP2_SS: -30.09820587 E_MP2: -114.0472762 E_total: -35866.22045
+Kinetic energy: 0.839757
+Finalised timestep 95
+Finished timestep 95 of 100
+Current flop count SP: 0 FLOPS, DP: 560.16549 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 562.32734 PFLOPS
+Timestep 96 took 2.589195
+Current total flops: SP: 0 FLOPS, DP: 563.516 PFLOPS
+Finalising timestep 96 of 100
+Current total flops: SP: 0 FLOPS, DP: 564.56469 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.17344 E_MP2_OS: -83.93432429 E_MP2_SS: -30.09524495 E_MP2: -114.0295692 E_total: -35866.203
+Kinetic energy: 0.824176
+Finalised timestep 96
+Finished timestep 96 of 100
+Current flop count SP: 0 FLOPS, DP: 565.9479 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 568.12849 PFLOPS
+Timestep 97 took 2.586325
+Current total flops: SP: 0 FLOPS, DP: 569.31918 PFLOPS
+Finalising timestep 97 of 100
+Current total flops: SP: 0 FLOPS, DP: 570.36296 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.18249 E_MP2_OS: -83.93872004 E_MP2_SS: -30.09512827 E_MP2: -114.0338483 E_total: -35866.21633
+Kinetic energy: 0.834495
+Finalised timestep 97
+Finished timestep 97 of 100
+Current flop count SP: 0 FLOPS, DP: 571.76788 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 573.94631 PFLOPS
+Timestep 98 took 2.579298
+Current total flops: SP: 0 FLOPS, DP: 575.12252 PFLOPS
+Finalising timestep 98 of 100
+Current total flops: SP: 0 FLOPS, DP: 576.14463 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.20072 E_MP2_OS: -83.95696811 E_MP2_SS: -30.09637782 E_MP2: -114.0533459 E_total: -35866.25406
+Kinetic energy: 0.867483
+Finalised timestep 98
+Finished timestep 98 of 100
+Current flop count SP: 0 FLOPS, DP: 577.53737 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 579.73843 PFLOPS
+Finalising timestep 99 of 100
+Current total flops: SP: 0 FLOPS, DP: 581.48553 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.21077 E_MP2_OS: -83.98185289 E_MP2_SS: -30.0982936 E_MP2: -114.0801465 E_total: -35866.29092
+Kinetic energy: 0.900261
+Finalised timestep 99
+Finished timestep 99 of 100
+Timestep 99 took 3.129373
+Current total flops: SP: 0 FLOPS, DP: 581.48553 PFLOPS
+Average timestep time: 2.623741
+Total flops: SP: 0 FLOPS, DP: 581.48553 PFLOPS
+Performance: SP: 0 FLOP/s, DP: 2.164 PFLOP/s
+Total processing time 898.8275272 seconds
+
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries

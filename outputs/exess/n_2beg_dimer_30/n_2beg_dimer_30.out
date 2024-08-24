@@ -1,0 +1,112 @@
+
+                 _..--+~/@-~--.      _____  __  __  _____   ____    ____
+             _-=~      (  .   "}    | ____| \ \/ / | ____| / ___|  / ___|
+          _-~     _.--=.\ \""""     |  _|    \  /  |  _|   \___ \  \___ \
+        _~      _-       \ \_\      | |___   /  \  | |___   ___) |  ___) |
+       =      _=          '--'      |_____| /_/\_\ |_____| |____/  |____/
+      '      =
+     :      :     ____            EXtreme-scale Electronic Structure Software
+___ |      ;                               Enjoy the power of GPUs!
+    ;       ;
+  ___=       \ ___ __     __..-...__
+     :        =_     _.-~~          ~~--.__
+_____ \         ~-+-~                   ___~=_______
+       == ...______ __ ___ _--~~--_
+  
+------------------------------------------------------------------------------
+    * Giuseppe Barca         * Hamish Brown           * Jorge Galvez-Vallejo
+    * Andrew Gilbert         * Min Htoo               * Fazeleh Kazemian    
+    * Sean Laguna            * Jack Miller            * Elise Palethorpe    
+    * Oliver Pulsford        * Ross Pure              * Christopher Seidl   
+    * Dylan Silke            * Joshua Singla          * Calum Snowdon       
+    * Ryan Stocks            * Ryan Swart             * Fiona Yu            
+------------------------------------------------------------------------------
+
+Commit no. used 9aebb21414bfc7c3035389d687942e4ef932d645
+
+Start of Calculation Local time: 2024-08-23 23:26:02
+Start of Calculation UTC time:   2024-08-24 06:26:02
+
+├── Calculation params
+│   ├── Title: n_2beg_dimer_30
+│   ├── Driver: Dynamics
+│   ├── Model
+│   │   ├── Theory level: RI-MP2
+│   │   ├── Spin configuration: Restricted
+│   │   ├── Primary basis: cc-pVDZ
+│   │   ├── Auxiliary basis: cc-pVDZ-RIFIT
+│   │   ├── Force cartesian basis sets: True
+│   │   ├── Standard orientation: Full System
+│   ├── Topologies
+│   │   ├── Number of topologies: 1
+│   ├── Keywords
+│   │   ├── SCF keywords
+│   │   │   ├── Max iterations: 50
+│   │   │   ├── Batch size: 2560
+│   │   │   ├── DIIS size: 8
+│   │   │   ├── Convergence threshold: 1.000e-07
+│   │   │   ├── Use guess fallback: True
+│   │   │   ├── Convergence metric: DIIS
+│   │   │   ├── Density threshold: 1.000e-10
+│   │   │   ├── RI-HF: True
+│   │   │   ├── Store RI B tensor on host: False
+│   │   │   ├── Compress B tensor shell pairs: False
+│   │   ├── Fragmentation keywords
+│   │   │   ├── Fragmented energy type: Total
+│   │   │   ├── Fragmentation level: Dimer
+│   │   │   ├── Cutoff type: Centroid
+│   │   │   ├── Fragmentation Cutoffs
+│   │   │   │   ├── Dimer: 3
+│   │   │   │   ├── Trimer: 1.200
+│   │   ├── RTAT keywords
+│   │   │   ├── Enabled: True
+│   │   ├── Debug keywords
+│   │   │   ├── Dry run: False
+│   │   │   ├── Skip calcs: False
+│   │   │   ├── Subfragment XYZ debug: False
+│   │   ├── Export Keywords
+│   │   │   ├── Not exporting any matrices
+│   │   ├── Guess keywords
+│   │   │   ├── Superposition of monomer densities: False
+│   │   │   ├── Superposition of subfragment densities: False
+│   │   │   ├── Basis set projection: False
+│   │   ├── Boundary keywords
+│   │   │   ├── X
+│   │   │   │   ├── Type: None
+│   │   │   ├── Y
+│   │   │   │   ├── Type: None
+│   │   │   ├── Z
+│   │   │   │   ├── Type: None
+│   │   ├── Logging
+│   │   │   ├── Restricted logs visible
+│   │   │   ├── Console logging
+│   │   │   │   ├── Level: PERFORMANCE
+│   │   ├── Dynamics Keywords
+│   │   │   ├── Timestep: 0.001 ps
+│   │   │   ├── # timesteps: 100
+│   │   │   ├── Use async timesteps: True
+│   │   ├── Integrals Keywords
+│   │   │   ├── Scheduler: Callback
+│   │   │   ├── Number of streams: 4
+│   ├── System
+│   │   ├── Max GPU Memory: 32 GB
+│   │   ├── Oversubscribe GPUs: False
+│   │   ├── Teams per node: 4
+│   │   ├── # GPUs per team: 1
+
+Queue building took 0.004133
+Current flop count SP: 0 FLOPS, DP: 85.485964 GFLOPS
+Current flop count SP: 0 FLOPS, DP: 188.79824 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 1709.621 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 3.9946369 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 6.1797358 PFLOPS
+Timestep 0 took 7.185638
+Current total flops: SP: 0 FLOPS, DP: 7.751861 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 9.9437774 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 11.993502 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 12.830907 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 14.455575 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 15.686064 PFLOPS
+srun: error: Node failure on nid003657
+slurmstepd: error: *** STEP 29627066.0 ON nid001025 CANCELLED AT 2024-08-24T06:31:00 DUE TO NODE FAILURE, SEE SLURMCTLD LOG FOR DETAILS ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
