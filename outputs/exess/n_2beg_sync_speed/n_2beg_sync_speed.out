@@ -1,0 +1,2855 @@
+Brooom brooom! Speed enabled
+
+                 _..--+~/@-~--.      _____  __  __  _____   ____    ____
+             _-=~      (  .   "}    | ____| \ \/ / | ____| / ___|  / ___|
+          _-~     _.--=.\ \""""     |  _|    \  /  |  _|   \___ \  \___ \
+        _~      _-       \ \_\      | |___   /  \  | |___   ___) |  ___) |
+       =      _=          '--'      |_____| /_/\_\ |_____| |____/  |____/
+      '      =
+     :      :     ____            EXtreme-scale Electronic Structure Software
+___ |      ;                               Enjoy the power of GPUs!
+    ;       ;
+  ___=       \ ___ __     __..-...__
+     :        =_     _.-~~          ~~--.__
+_____ \         ~-+-~                   ___~=_______
+       == ...______ __ ___ _--~~--_
+  
+------------------------------------------------------------------------------
+    * Giuseppe Barca         * Hamish Brown           * Jorge Galvez-Vallejo
+    * Andrew Gilbert         * Min Htoo               * Fazeleh Kazemian    
+    * Sean Laguna            * Jack Miller            * Elise Palethorpe    
+    * Oliver Pulsford        * Ross Pure              * Christopher Seidl   
+    * Dylan Silke            * Joshua Singla          * Calum Snowdon       
+    * Ryan Stocks            * Ryan Swart             * Fiona Yu            
+------------------------------------------------------------------------------
+
+Commit no. used 9aebb21414bfc7c3035389d687942e4ef932d645
+
+Start of Calculation Local time: 2024-08-24 08:13:33
+Start of Calculation UTC time:   2024-08-24 15:13:33
+
+[2024-08-24 08:13:34.035 r0 PERFORMANCE] ├── Calculation params
+│   ├── Title: n_2beg_sync_speed
+│   ├── Driver: Dynamics
+│   ├── Model
+│   │   ├── Theory level: RI-MP2
+│   │   ├── Spin configuration: Restricted
+│   │   ├── Primary basis: cc-pVDZ
+│   │   ├── Auxiliary basis: cc-pVDZ-RIFIT
+│   │   ├── Force cartesian basis sets: True
+│   │   ├── Standard orientation: Full System
+│   ├── Topologies
+│   │   ├── Number of topologies: 1
+│   ├── Keywords
+│   │   ├── SCF keywords
+│   │   │   ├── Max iterations: 50
+│   │   │   ├── Batch size: 2560
+│   │   │   ├── DIIS size: 8
+│   │   │   ├── Convergence threshold: 1.000e-07
+│   │   │   ├── Use guess fallback: True
+│   │   │   ├── Convergence metric: DIIS
+│   │   │   ├── Density threshold: 1.000e-10
+│   │   │   ├── RI-HF: True
+│   │   │   ├── Store RI B tensor on host: False
+│   │   │   ├── Compress B tensor shell pairs: False
+│   │   ├── Fragmentation keywords
+│   │   │   ├── Fragmented energy type: Total
+│   │   │   ├── Fragmentation level: Trimer
+│   │   │   ├── Cutoff type: Centroid
+│   │   │   ├── Using speed (beta)
+│   │   │   ├── Fragmentation Cutoffs
+│   │   │   │   ├── Dimer: 2
+│   │   │   │   ├── Trimer: 1.200
+│   │   ├── RTAT keywords
+│   │   │   ├── Enabled: True
+│   │   ├── Debug keywords
+│   │   │   ├── Dry run: False
+│   │   │   ├── Skip calcs: False
+│   │   │   ├── Subfragment XYZ debug: False
+│   │   ├── Export Keywords
+│   │   │   ├── Not exporting any matrices
+│   │   ├── Guess keywords
+│   │   │   ├── Superposition of monomer densities: False
+│   │   │   ├── Superposition of subfragment densities: False
+│   │   │   ├── Basis set projection: False
+│   │   ├── Boundary keywords
+│   │   │   ├── X
+│   │   │   │   ├── Type: None
+│   │   │   ├── Y
+│   │   │   │   ├── Type: None
+│   │   │   ├── Z
+│   │   │   │   ├── Type: None
+│   │   ├── Logging
+│   │   │   ├── Restricted logs visible
+│   │   │   ├── Console logging
+│   │   │   │   ├── Level: PERFORMANCE
+│   │   ├── Dynamics Keywords
+│   │   │   ├── Timestep: 0.001 ps
+│   │   │   ├── # timesteps: 100
+│   │   │   ├── Use async timesteps: False
+│   │   ├── Integrals Keywords
+│   │   │   ├── Scheduler: Callback
+│   │   │   ├── Number of streams: 4
+│   ├── System
+│   │   ├── Max GPU Memory: 32 GB
+│   │   ├── Oversubscribe GPUs: False
+│   │   ├── Teams per node: 4
+│   │   ├── # GPUs per team: 1
+
+[2024-08-24 08:13:36.495 r0 PERFORMANCE] Queue building took 0.092715
+[2024-08-24 08:13:36.586 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 19063 Trimers
+ -> 25722 total fragments
+
+[2024-08-24 08:16:06.394 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:16:06.394 r0 PERFORMANCE] Total energy: E_RHF: -35752.07383 E_MP2_OS: -83.37859046 E_MP2_SS: -29.83676529 E_MP2: -113.2153558 E_total: -35865.28918
+[2024-08-24 08:16:06.430 r0 PERFORMANCE] Kinetic energy: 0.000000
+[2024-08-24 08:16:06.431 r0 PERFORMANCE] Timestep 0 took 150.041896, SP: 0 FLOP/s, DP: 625.3 TFLOP/s
+[2024-08-24 08:16:06.598 r0 PERFORMANCE] Queue building took 0.121929
+[2024-08-24 08:16:06.707 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 19063 Trimers
+ -> 25722 total fragments
+
+[2024-08-24 08:16:34.306 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:16:34.306 r0 PERFORMANCE] Total energy: E_RHF: -35752.10864 E_MP2_OS: -83.40432964 E_MP2_SS: -29.84469012 E_MP2: -113.2490198 E_total: -35865.35766
+[2024-08-24 08:16:34.342 r0 PERFORMANCE] Kinetic energy: 0.067524
+[2024-08-24 08:16:34.342 r0 PERFORMANCE] Timestep 1 took 27.868644, SP: 0 FLOP/s, DP: 1054 TFLOP/s
+[2024-08-24 08:16:34.512 r0 PERFORMANCE] Queue building took 0.114460
+[2024-08-24 08:16:34.627 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 19063 Trimers
+ -> 25722 total fragments
+
+[2024-08-24 08:17:02.202 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:17:02.202 r0 PERFORMANCE] Total energy: E_RHF: -35752.16224 E_MP2_OS: -83.47165052 E_MP2_SS: -29.86527434 E_MP2: -113.3369249 E_total: -35865.49916
+[2024-08-24 08:17:02.237 r0 PERFORMANCE] Kinetic energy: 0.212367
+[2024-08-24 08:17:02.237 r0 PERFORMANCE] Timestep 2 took 27.847714, SP: 0 FLOP/s, DP: 1367 TFLOP/s
+[2024-08-24 08:17:02.398 r0 PERFORMANCE] Queue building took 0.091884
+[2024-08-24 08:17:02.517 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 19021 Trimers
+ -> 25679 total fragments
+
+[2024-08-24 08:17:29.921 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:17:29.922 r0 PERFORMANCE] Total energy: E_RHF: -35752.16529 E_MP2_OS: -83.56408508 E_MP2_SS: -29.89428155 E_MP2: -113.4583666 E_total: -35865.62366
+[2024-08-24 08:17:29.958 r0 PERFORMANCE] Kinetic energy: 0.339411
+[2024-08-24 08:17:29.958 r0 PERFORMANCE] Timestep 3 took 27.659342, SP: 0 FLOP/s, DP: 1606 TFLOP/s
+[2024-08-24 08:17:30.124 r0 PERFORMANCE] Queue building took 0.083666
+[2024-08-24 08:17:30.237 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 19037 Trimers
+ -> 25696 total fragments
+
+[2024-08-24 08:17:57.587 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:17:57.587 r0 PERFORMANCE] Total energy: E_RHF: -35752.131 E_MP2_OS: -83.65235479 E_MP2_SS: -29.9224589 E_MP2: -113.5748137 E_total: -35865.70581
+[2024-08-24 08:17:57.623 r0 PERFORMANCE] Kinetic energy: 0.422214
+[2024-08-24 08:17:57.623 r0 PERFORMANCE] Timestep 4 took 27.595782, SP: 0 FLOP/s, DP: 1795 TFLOP/s
+[2024-08-24 08:17:57.792 r0 PERFORMANCE] Queue building took 0.099392
+[2024-08-24 08:17:57.911 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 19037 Trimers
+ -> 25695 total fragments
+
+[2024-08-24 08:18:25.200 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:18:25.200 r0 PERFORMANCE] Total energy: E_RHF: -35752.12439 E_MP2_OS: -83.70698297 E_MP2_SS: -29.93996268 E_MP2: -113.6469456 E_total: -35865.77133
+[2024-08-24 08:18:25.234 r0 PERFORMANCE] Kinetic energy: 0.490956
+[2024-08-24 08:18:25.234 r0 PERFORMANCE] Timestep 5 took 27.559134, SP: 0 FLOP/s, DP: 1949 TFLOP/s
+[2024-08-24 08:18:25.387 r0 PERFORMANCE] Queue building took 0.080186
+[2024-08-24 08:18:25.510 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 19037 Trimers
+ -> 25695 total fragments
+
+[2024-08-24 08:18:52.715 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:18:52.715 r0 PERFORMANCE] Total energy: E_RHF: -35752.16999 E_MP2_OS: -83.73622601 E_MP2_SS: -29.95090141 E_MP2: -113.6871274 E_total: -35865.85711
+[2024-08-24 08:18:52.752 r0 PERFORMANCE] Kinetic energy: 0.555874
+[2024-08-24 08:18:52.752 r0 PERFORMANCE] Timestep 6 took 27.457548, SP: 0 FLOP/s, DP: 2.076 PFLOP/s
+[2024-08-24 08:18:52.938 r0 PERFORMANCE] Queue building took 0.093249
+[2024-08-24 08:18:53.046 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 19037 Trimers
+ -> 25695 total fragments
+
+[2024-08-24 08:19:20.206 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:19:20.206 r0 PERFORMANCE] Total energy: E_RHF: -35752.224 E_MP2_OS: -83.73743207 E_MP2_SS: -29.95419454 E_MP2: -113.6916266 E_total: -35865.91563
+[2024-08-24 08:19:20.240 r0 PERFORMANCE] Kinetic energy: 0.584932
+[2024-08-24 08:19:20.240 r0 PERFORMANCE] Timestep 7 took 27.419403, SP: 0 FLOP/s, DP: 2.183 PFLOP/s
+[2024-08-24 08:19:20.358 r0 PERFORMANCE] Queue building took 0.063736
+[2024-08-24 08:19:20.493 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6516 Dimers
+ -> 19037 Trimers
+ -> 25697 total fragments
+
+[2024-08-24 08:19:47.629 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:19:47.629 r0 PERFORMANCE] Total energy: E_RHF: -35752.22711 E_MP2_OS: -83.71942787 E_MP2_SS: -29.95246555 E_MP2: -113.6718934 E_total: -35865.89901
+[2024-08-24 08:19:47.666 r0 PERFORMANCE] Kinetic energy: 0.549113
+[2024-08-24 08:19:47.666 r0 PERFORMANCE] Timestep 8 took 27.375758, SP: 0 FLOP/s, DP: 2.275 PFLOP/s
+[2024-08-24 08:19:47.872 r0 PERFORMANCE] Queue building took 0.104633
+[2024-08-24 08:19:47.973 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 19037 Trimers
+ -> 25698 total fragments
+
+[2024-08-24 08:20:15.082 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:20:15.082 r0 PERFORMANCE] Total energy: E_RHF: -35752.16935 E_MP2_OS: -83.70802694 E_MP2_SS: -29.95376063 E_MP2: -113.6617876 E_total: -35865.83113
+[2024-08-24 08:20:15.116 r0 PERFORMANCE] Kinetic energy: 0.471230
+[2024-08-24 08:20:15.116 r0 PERFORMANCE] Timestep 9 took 27.369151, SP: 0 FLOP/s, DP: 2.354 PFLOP/s
+[2024-08-24 08:20:15.286 r0 PERFORMANCE] Queue building took 0.097013
+[2024-08-24 08:20:15.386 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6519 Dimers
+ -> 19037 Trimers
+ -> 25700 total fragments
+
+[2024-08-24 08:20:42.468 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:20:42.468 r0 PERFORMANCE] Total energy: E_RHF: -35752.09229 E_MP2_OS: -83.71919709 E_MP2_SS: -29.96172244 E_MP2: -113.6809195 E_total: -35865.77321
+[2024-08-24 08:20:42.504 r0 PERFORMANCE] Kinetic energy: 0.413748
+[2024-08-24 08:20:42.504 r0 PERFORMANCE] Timestep 10 took 27.321544, SP: 0 FLOP/s, DP: 2.424 PFLOP/s
+[2024-08-24 08:20:42.655 r0 PERFORMANCE] Queue building took 0.068414
+[2024-08-24 08:20:42.806 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6519 Dimers
+ -> 19037 Trimers
+ -> 25700 total fragments
+
+[2024-08-24 08:21:09.832 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:21:09.832 r0 PERFORMANCE] Total energy: E_RHF: -35752.02827 E_MP2_OS: -83.76898566 E_MP2_SS: -29.98038526 E_MP2: -113.7493709 E_total: -35865.77764
+[2024-08-24 08:21:09.887 r0 PERFORMANCE] Kinetic energy: 0.413131
+[2024-08-24 08:21:09.887 r0 PERFORMANCE] Timestep 11 took 27.313190, SP: 0 FLOP/s, DP: 2.485 PFLOP/s
+[2024-08-24 08:21:10.080 r0 PERFORMANCE] Queue building took 0.113256
+[2024-08-24 08:21:10.173 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6519 Dimers
+ -> 19037 Trimers
+ -> 25700 total fragments
+
+[2024-08-24 08:21:37.196 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:21:37.196 r0 PERFORMANCE] Total energy: E_RHF: -35751.97511 E_MP2_OS: -83.84633593 E_MP2_SS: -30.00428187 E_MP2: -113.8506178 E_total: -35865.82573
+[2024-08-24 08:21:37.230 r0 PERFORMANCE] Kinetic energy: 0.454811
+[2024-08-24 08:21:37.230 r0 PERFORMANCE] Timestep 12 took 27.269379, SP: 0 FLOP/s, DP: 2.539 PFLOP/s
+[2024-08-24 08:21:37.382 r0 PERFORMANCE] Queue building took 0.107274
+[2024-08-24 08:21:37.523 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6518 Dimers
+ -> 19037 Trimers
+ -> 25699 total fragments
+
+[2024-08-24 08:22:04.520 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:22:04.520 r0 PERFORMANCE] Total energy: E_RHF: -35751.93029 E_MP2_OS: -83.91995204 E_MP2_SS: -30.02227289 E_MP2: -113.9422249 E_total: -35865.87252
+[2024-08-24 08:22:04.557 r0 PERFORMANCE] Kinetic energy: 0.508973
+[2024-08-24 08:22:04.557 r0 PERFORMANCE] Timestep 13 took 27.286358, SP: 0 FLOP/s, DP: 2.588 PFLOP/s
+[2024-08-24 08:22:04.730 r0 PERFORMANCE] Queue building took 0.083892
+[2024-08-24 08:22:04.857 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6518 Dimers
+ -> 19037 Trimers
+ -> 25699 total fragments
+
+[2024-08-24 08:22:31.809 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:22:31.809 r0 PERFORMANCE] Total energy: E_RHF: -35751.90955 E_MP2_OS: -83.96578884 E_MP2_SS: -30.02565426 E_MP2: -113.9914431 E_total: -35865.90099
+[2024-08-24 08:22:31.849 r0 PERFORMANCE] Kinetic energy: 0.558658
+[2024-08-24 08:22:31.849 r0 PERFORMANCE] Timestep 14 took 27.226997, SP: 0 FLOP/s, DP: 2.631 PFLOP/s
+[2024-08-24 08:22:31.990 r0 PERFORMANCE] Queue building took 0.096707
+[2024-08-24 08:22:32.126 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 19037 Trimers
+ -> 25698 total fragments
+
+[2024-08-24 08:22:59.049 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:22:59.049 r0 PERFORMANCE] Total energy: E_RHF: -35751.93689 E_MP2_OS: -83.98093234 E_MP2_SS: -30.01713766 E_MP2: -113.99807 E_total: -35865.93496
+[2024-08-24 08:22:59.086 r0 PERFORMANCE] Kinetic energy: 0.603073
+[2024-08-24 08:22:59.086 r0 PERFORMANCE] Timestep 15 took 27.199497, SP: 0 FLOP/s, DP: 2.671 PFLOP/s
+[2024-08-24 08:22:59.259 r0 PERFORMANCE] Queue building took 0.101509
+[2024-08-24 08:22:59.397 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 19037 Trimers
+ -> 25698 total fragments
+
+[2024-08-24 08:23:26.307 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:23:26.307 r0 PERFORMANCE] Total energy: E_RHF: -35752.02331 E_MP2_OS: -83.94031751 E_MP2_SS: -29.98912034 E_MP2: -113.9294379 E_total: -35865.95275
+[2024-08-24 08:23:26.344 r0 PERFORMANCE] Kinetic energy: 0.646568
+[2024-08-24 08:23:26.344 r0 PERFORMANCE] Timestep 16 took 27.197260, SP: 0 FLOP/s, DP: 2.707 PFLOP/s
+[2024-08-24 08:23:26.490 r0 PERFORMANCE] Queue building took 0.103566
+[2024-08-24 08:23:26.609 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6518 Dimers
+ -> 19037 Trimers
+ -> 25699 total fragments
+
+[2024-08-24 08:23:53.518 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:23:53.518 r0 PERFORMANCE] Total energy: E_RHF: -35752.1509 E_MP2_OS: -83.87363985 E_MP2_SS: -29.95507883 E_MP2: -113.8287187 E_total: -35865.97962
+[2024-08-24 08:23:53.555 r0 PERFORMANCE] Kinetic energy: 0.682781
+[2024-08-24 08:23:53.556 r0 PERFORMANCE] Timestep 17 took 27.172840, SP: 0 FLOP/s, DP: 2.74 PFLOP/s
+[2024-08-24 08:23:53.724 r0 PERFORMANCE] Queue building took 0.090390
+[2024-08-24 08:23:53.834 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 19037 Trimers
+ -> 25698 total fragments
+
+[2024-08-24 08:24:20.727 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:24:20.727 r0 PERFORMANCE] Total energy: E_RHF: -35752.27544 E_MP2_OS: -83.78289609 E_MP2_SS: -29.91707665 E_MP2: -113.6999727 E_total: -35865.97541
+[2024-08-24 08:24:20.765 r0 PERFORMANCE] Kinetic energy: 0.695144
+[2024-08-24 08:24:20.765 r0 PERFORMANCE] Timestep 18 took 27.145170, SP: 0 FLOP/s, DP: 2.771 PFLOP/s
+[2024-08-24 08:24:20.944 r0 PERFORMANCE] Queue building took 0.098415
+[2024-08-24 08:24:21.048 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6516 Dimers
+ -> 19052 Trimers
+ -> 25712 total fragments
+
+[2024-08-24 08:24:47.911 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:24:47.911 r0 PERFORMANCE] Total energy: E_RHF: -35752.35628 E_MP2_OS: -83.70530511 E_MP2_SS: -29.8881486 E_MP2: -113.5934537 E_total: -35865.94974
+[2024-08-24 08:24:47.947 r0 PERFORMANCE] Kinetic energy: 0.674124
+[2024-08-24 08:24:47.947 r0 PERFORMANCE] Timestep 19 took 27.115961, SP: 0 FLOP/s, DP: 2.799 PFLOP/s
+[2024-08-24 08:24:48.130 r0 PERFORMANCE] Queue building took 0.103894
+[2024-08-24 08:24:48.233 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 19052 Trimers
+ -> 25711 total fragments
+
+[2024-08-24 08:25:15.059 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:25:15.059 r0 PERFORMANCE] Total energy: E_RHF: -35752.38041 E_MP2_OS: -83.65330994 E_MP2_SS: -29.87138605 E_MP2: -113.524696 E_total: -35865.9051
+[2024-08-24 08:25:15.096 r0 PERFORMANCE] Kinetic energy: 0.631765
+[2024-08-24 08:25:15.096 r0 PERFORMANCE] Timestep 20 took 27.078905, SP: 0 FLOP/s, DP: 2.824 PFLOP/s
+[2024-08-24 08:25:15.287 r0 PERFORMANCE] Queue building took 0.097165
+[2024-08-24 08:25:15.385 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 19052 Trimers
+ -> 25711 total fragments
+
+[2024-08-24 08:25:42.172 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:25:42.173 r0 PERFORMANCE] Total energy: E_RHF: -35752.3695 E_MP2_OS: -83.62957124 E_MP2_SS: -29.86497661 E_MP2: -113.4945479 E_total: -35865.86405
+[2024-08-24 08:25:42.209 r0 PERFORMANCE] Kinetic energy: 0.599394
+[2024-08-24 08:25:42.209 r0 PERFORMANCE] Timestep 21 took 27.041628, SP: 0 FLOP/s, DP: 2.849 PFLOP/s
+[2024-08-24 08:25:42.338 r0 PERFORMANCE] Queue building took 0.086128
+[2024-08-24 08:25:42.468 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 19034 Trimers
+ -> 25692 total fragments
+
+[2024-08-24 08:26:09.245 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:26:09.245 r0 PERFORMANCE] Total energy: E_RHF: -35752.35684 E_MP2_OS: -83.64004756 E_MP2_SS: -29.8689951 E_MP2: -113.5090427 E_total: -35865.86588
+[2024-08-24 08:26:09.280 r0 PERFORMANCE] Kinetic energy: 0.603118
+[2024-08-24 08:26:09.280 r0 PERFORMANCE] Timestep 22 took 27.039028, SP: 0 FLOP/s, DP: 2.871 PFLOP/s
+[2024-08-24 08:26:09.437 r0 PERFORMANCE] Queue building took 0.075156
+[2024-08-24 08:26:09.563 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 19034 Trimers
+ -> 25692 total fragments
+
+[2024-08-24 08:26:36.292 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:26:36.293 r0 PERFORMANCE] Total energy: E_RHF: -35752.35417 E_MP2_OS: -83.67124216 E_MP2_SS: -29.8776599 E_MP2: -113.5489021 E_total: -35865.90307
+[2024-08-24 08:26:36.328 r0 PERFORMANCE] Kinetic energy: 0.637812
+[2024-08-24 08:26:36.328 r0 PERFORMANCE] Timestep 23 took 26.978198, SP: 0 FLOP/s, DP: 2.892 PFLOP/s
+[2024-08-24 08:26:36.497 r0 PERFORMANCE] Queue building took 0.100635
+[2024-08-24 08:26:36.617 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 18998 Trimers
+ -> 25656 total fragments
+
+[2024-08-24 08:27:03.313 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:27:03.313 r0 PERFORMANCE] Total energy: E_RHF: -35752.35607 E_MP2_OS: -83.70841205 E_MP2_SS: -29.88654116 E_MP2: -113.5949532 E_total: -35865.95102
+[2024-08-24 08:27:03.347 r0 PERFORMANCE] Kinetic energy: 0.677650
+[2024-08-24 08:27:03.347 r0 PERFORMANCE] Timestep 24 took 26.958673, SP: 0 FLOP/s, DP: 2.911 PFLOP/s
+[2024-08-24 08:27:03.506 r0 PERFORMANCE] Queue building took 0.121875
+[2024-08-24 08:27:03.615 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 18998 Trimers
+ -> 25657 total fragments
+
+[2024-08-24 08:27:30.302 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:27:30.302 r0 PERFORMANCE] Total energy: E_RHF: -35752.36539 E_MP2_OS: -83.73999017 E_MP2_SS: -29.8929613 E_MP2: -113.6329515 E_total: -35865.99834
+[2024-08-24 08:27:30.337 r0 PERFORMANCE] Kinetic energy: 0.707458
+[2024-08-24 08:27:30.337 r0 PERFORMANCE] Timestep 25 took 26.960109, SP: 0 FLOP/s, DP: 2.93 PFLOP/s
+[2024-08-24 08:27:30.533 r0 PERFORMANCE] Queue building took 0.127899
+[2024-08-24 08:27:30.640 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6516 Dimers
+ -> 18998 Trimers
+ -> 25658 total fragments
+
+[2024-08-24 08:27:57.321 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:27:57.321 r0 PERFORMANCE] Total energy: E_RHF: -35752.39879 E_MP2_OS: -83.73935825 E_MP2_SS: -29.88895816 E_MP2: -113.6283164 E_total: -35866.02711
+[2024-08-24 08:27:57.357 r0 PERFORMANCE] Kinetic energy: 0.734606
+[2024-08-24 08:27:57.357 r0 PERFORMANCE] Timestep 26 took 26.954664, SP: 0 FLOP/s, DP: 2.947 PFLOP/s
+[2024-08-24 08:27:57.462 r0 PERFORMANCE] Queue building took 0.059335
+[2024-08-24 08:27:57.602 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18960 Trimers
+ -> 25621 total fragments
+
+[2024-08-24 08:28:24.265 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:28:24.265 r0 PERFORMANCE] Total energy: E_RHF: -35752.46715 E_MP2_OS: -83.7275794 E_MP2_SS: -29.88529237 E_MP2: -113.6128718 E_total: -35866.08002
+[2024-08-24 08:28:24.301 r0 PERFORMANCE] Kinetic energy: 0.770096
+[2024-08-24 08:28:24.301 r0 PERFORMANCE] Timestep 27 took 26.903274, SP: 0 FLOP/s, DP: 2.963 PFLOP/s
+[2024-08-24 08:28:24.506 r0 PERFORMANCE] Queue building took 0.144114
+[2024-08-24 08:28:24.595 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18944 Trimers
+ -> 25605 total fragments
+
+[2024-08-24 08:28:51.157 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:28:51.158 r0 PERFORMANCE] Total energy: E_RHF: -35752.55268 E_MP2_OS: -83.69751817 E_MP2_SS: -29.87932214 E_MP2: -113.5768403 E_total: -35866.12952
+[2024-08-24 08:28:51.194 r0 PERFORMANCE] Kinetic energy: 0.808986
+[2024-08-24 08:28:51.194 r0 PERFORMANCE] Timestep 28 took 26.836653, SP: 0 FLOP/s, DP: 2.978 PFLOP/s
+[2024-08-24 08:28:51.366 r0 PERFORMANCE] Queue building took 0.101055
+[2024-08-24 08:28:51.474 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18930 Trimers
+ -> 25591 total fragments
+
+[2024-08-24 08:29:18.065 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:29:18.065 r0 PERFORMANCE] Total energy: E_RHF: -35752.62321 E_MP2_OS: -83.66693982 E_MP2_SS: -29.87747113 E_MP2: -113.544411 E_total: -35866.16762
+[2024-08-24 08:29:18.119 r0 PERFORMANCE] Kinetic energy: 0.836165
+[2024-08-24 08:29:18.119 r0 PERFORMANCE] Timestep 29 took 26.865233, SP: 0 FLOP/s, DP: 2.992 PFLOP/s
+[2024-08-24 08:29:18.290 r0 PERFORMANCE] Queue building took 0.123422
+[2024-08-24 08:29:18.412 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18930 Trimers
+ -> 25591 total fragments
+
+[2024-08-24 08:29:44.982 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:29:44.982 r0 PERFORMANCE] Total energy: E_RHF: -35752.65787 E_MP2_OS: -83.64994785 E_MP2_SS: -29.88294684 E_MP2: -113.5328947 E_total: -35866.19076
+[2024-08-24 08:29:45.016 r0 PERFORMANCE] Kinetic energy: 0.844835
+[2024-08-24 08:29:45.016 r0 PERFORMANCE] Timestep 30 took 26.862383, SP: 0 FLOP/s, DP: 3.005 PFLOP/s
+[2024-08-24 08:29:45.198 r0 PERFORMANCE] Queue building took 0.109036
+[2024-08-24 08:29:45.326 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18920 Trimers
+ -> 25581 total fragments
+
+[2024-08-24 08:30:11.875 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:30:11.875 r0 PERFORMANCE] Total energy: E_RHF: -35752.65638 E_MP2_OS: -83.64957237 E_MP2_SS: -29.89416591 E_MP2: -113.5437383 E_total: -35866.20012
+[2024-08-24 08:30:11.910 r0 PERFORMANCE] Kinetic energy: 0.842262
+[2024-08-24 08:30:11.910 r0 PERFORMANCE] Timestep 31 took 26.836509, SP: 0 FLOP/s, DP: 3.018 PFLOP/s
+[2024-08-24 08:30:12.118 r0 PERFORMANCE] Queue building took 0.111899
+[2024-08-24 08:30:12.216 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18920 Trimers
+ -> 25581 total fragments
+
+[2024-08-24 08:30:38.789 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:30:38.790 r0 PERFORMANCE] Total energy: E_RHF: -35752.63653 E_MP2_OS: -83.66407355 E_MP2_SS: -29.90685289 E_MP2: -113.5709264 E_total: -35866.20746
+[2024-08-24 08:30:38.826 r0 PERFORMANCE] Kinetic energy: 0.844097
+[2024-08-24 08:30:38.826 r0 PERFORMANCE] Timestep 32 took 26.835154, SP: 0 FLOP/s, DP: 3.03 PFLOP/s
+[2024-08-24 08:30:39.031 r0 PERFORMANCE] Queue building took 0.081491
+[2024-08-24 08:30:39.129 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6518 Dimers
+ -> 18928 Trimers
+ -> 25590 total fragments
+
+[2024-08-24 08:31:05.698 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:31:05.698 r0 PERFORMANCE] Total energy: E_RHF: -35752.6178 E_MP2_OS: -83.6807467 E_MP2_SS: -29.91430303 E_MP2: -113.5950497 E_total: -35866.21285
+[2024-08-24 08:31:05.735 r0 PERFORMANCE] Kinetic energy: 0.860489
+[2024-08-24 08:31:05.735 r0 PERFORMANCE] Timestep 33 took 26.804352, SP: 0 FLOP/s, DP: 3.042 PFLOP/s
+[2024-08-24 08:31:05.945 r0 PERFORMANCE] Queue building took 0.156032
+[2024-08-24 08:31:06.035 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6518 Dimers
+ -> 18928 Trimers
+ -> 25590 total fragments
+
+[2024-08-24 08:31:32.579 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:31:32.579 r0 PERFORMANCE] Total energy: E_RHF: -35752.60289 E_MP2_OS: -83.70471745 E_MP2_SS: -29.91869526 E_MP2: -113.6234127 E_total: -35866.2263
+[2024-08-24 08:31:32.615 r0 PERFORMANCE] Kinetic energy: 0.882416
+[2024-08-24 08:31:32.615 r0 PERFORMANCE] Timestep 34 took 26.833161, SP: 0 FLOP/s, DP: 3.052 PFLOP/s
+[2024-08-24 08:31:32.786 r0 PERFORMANCE] Queue building took 0.075898
+[2024-08-24 08:31:32.897 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6518 Dimers
+ -> 18928 Trimers
+ -> 25590 total fragments
+
+[2024-08-24 08:31:59.437 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:31:59.437 r0 PERFORMANCE] Total energy: E_RHF: -35752.58118 E_MP2_OS: -83.71330987 E_MP2_SS: -29.91262917 E_MP2: -113.625939 E_total: -35866.20712
+[2024-08-24 08:31:59.492 r0 PERFORMANCE] Kinetic energy: 0.889506
+[2024-08-24 08:31:59.492 r0 PERFORMANCE] Timestep 35 took 26.791957, SP: 0 FLOP/s, DP: 3.063 PFLOP/s
+[2024-08-24 08:31:59.647 r0 PERFORMANCE] Queue building took 0.072889
+[2024-08-24 08:31:59.784 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6517 Dimers
+ -> 18928 Trimers
+ -> 25589 total fragments
+
+[2024-08-24 08:32:26.313 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:32:26.313 r0 PERFORMANCE] Total energy: E_RHF: -35752.55317 E_MP2_OS: -83.71938077 E_MP2_SS: -29.90479677 E_MP2: -113.6241775 E_total: -35866.17735
+[2024-08-24 08:32:26.347 r0 PERFORMANCE] Kinetic energy: 0.873934
+[2024-08-24 08:32:26.347 r0 PERFORMANCE] Timestep 36 took 26.795774, SP: 0 FLOP/s, DP: 3.073 PFLOP/s
+[2024-08-24 08:32:26.529 r0 PERFORMANCE] Queue building took 0.097549
+[2024-08-24 08:32:26.625 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6516 Dimers
+ -> 18928 Trimers
+ -> 25588 total fragments
+
+[2024-08-24 08:32:53.156 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:32:53.156 r0 PERFORMANCE] Total energy: E_RHF: -35752.53537 E_MP2_OS: -83.70937616 E_MP2_SS: -29.89262962 E_MP2: -113.6020058 E_total: -35866.13738
+[2024-08-24 08:32:53.193 r0 PERFORMANCE] Kinetic energy: 0.848304
+[2024-08-24 08:32:53.193 r0 PERFORMANCE] Timestep 37 took 26.773506, SP: 0 FLOP/s, DP: 3.082 PFLOP/s
+[2024-08-24 08:32:53.360 r0 PERFORMANCE] Queue building took 0.114971
+[2024-08-24 08:32:53.469 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6516 Dimers
+ -> 18908 Trimers
+ -> 25568 total fragments
+
+[2024-08-24 08:33:19.957 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:33:19.957 r0 PERFORMANCE] Total energy: E_RHF: -35752.54673 E_MP2_OS: -83.68813789 E_MP2_SS: -29.88004909 E_MP2: -113.568187 E_total: -35866.11492
+[2024-08-24 08:33:19.994 r0 PERFORMANCE] Kinetic energy: 0.832273
+[2024-08-24 08:33:19.994 r0 PERFORMANCE] Timestep 38 took 26.754241, SP: 0 FLOP/s, DP: 3.091 PFLOP/s
+[2024-08-24 08:33:20.142 r0 PERFORMANCE] Queue building took 0.091075
+[2024-08-24 08:33:20.254 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 18885 Trimers
+ -> 25544 total fragments
+
+[2024-08-24 08:33:46.719 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:33:46.719 r0 PERFORMANCE] Total energy: E_RHF: -35752.58925 E_MP2_OS: -83.65222627 E_MP2_SS: -29.86612084 E_MP2: -113.5183471 E_total: -35866.1076
+[2024-08-24 08:33:46.755 r0 PERFORMANCE] Kinetic energy: 0.833484
+[2024-08-24 08:33:46.755 r0 PERFORMANCE] Timestep 39 took 26.708546, SP: 0 FLOP/s, DP: 3.1 PFLOP/s
+[2024-08-24 08:33:46.931 r0 PERFORMANCE] Queue building took 0.122017
+[2024-08-24 08:33:47.038 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 18853 Trimers
+ -> 25512 total fragments
+
+[2024-08-24 08:34:13.431 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:34:13.431 r0 PERFORMANCE] Total energy: E_RHF: -35752.64017 E_MP2_OS: -83.62522238 E_MP2_SS: -29.85882116 E_MP2: -113.4840435 E_total: -35866.12421
+[2024-08-24 08:34:13.467 r0 PERFORMANCE] Kinetic energy: 0.838589
+[2024-08-24 08:34:13.467 r0 PERFORMANCE] Timestep 40 took 26.679280, SP: 0 FLOP/s, DP: 3.108 PFLOP/s
+[2024-08-24 08:34:13.660 r0 PERFORMANCE] Queue building took 0.122532
+[2024-08-24 08:34:13.764 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6515 Dimers
+ -> 18839 Trimers
+ -> 25498 total fragments
+
+[2024-08-24 08:34:40.123 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:34:40.123 r0 PERFORMANCE] Total energy: E_RHF: -35752.6729 E_MP2_OS: -83.59242741 E_MP2_SS: -29.84984871 E_MP2: -113.4422761 E_total: -35866.11517
+[2024-08-24 08:34:40.158 r0 PERFORMANCE] Kinetic energy: 0.833049
+[2024-08-24 08:34:40.158 r0 PERFORMANCE] Timestep 41 took 26.627972, SP: 0 FLOP/s, DP: 3.116 PFLOP/s
+[2024-08-24 08:34:40.306 r0 PERFORMANCE] Queue building took 0.063896
+[2024-08-24 08:34:40.449 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 18839 Trimers
+ -> 25497 total fragments
+
+[2024-08-24 08:35:06.812 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:35:06.812 r0 PERFORMANCE] Total energy: E_RHF: -35752.68703 E_MP2_OS: -83.56813136 E_MP2_SS: -29.84197696 E_MP2: -113.4101083 E_total: -35866.09714
+[2024-08-24 08:35:06.849 r0 PERFORMANCE] Kinetic energy: 0.824620
+[2024-08-24 08:35:06.849 r0 PERFORMANCE] Timestep 42 took 26.628411, SP: 0 FLOP/s, DP: 3.124 PFLOP/s
+[2024-08-24 08:35:07.021 r0 PERFORMANCE] Queue building took 0.072234
+[2024-08-24 08:35:07.142 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6512 Dimers
+ -> 18816 Trimers
+ -> 25472 total fragments
+
+[2024-08-24 08:35:33.448 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:35:33.448 r0 PERFORMANCE] Total energy: E_RHF: -35752.70207 E_MP2_OS: -83.57189375 E_MP2_SS: -29.84035156 E_MP2: -113.4122453 E_total: -35866.11431
+[2024-08-24 08:35:33.482 r0 PERFORMANCE] Kinetic energy: 0.835603
+[2024-08-24 08:35:33.482 r0 PERFORMANCE] Timestep 43 took 26.548515, SP: 0 FLOP/s, DP: 3.131 PFLOP/s
+[2024-08-24 08:35:33.675 r0 PERFORMANCE] Queue building took 0.101821
+[2024-08-24 08:35:33.779 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6513 Dimers
+ -> 18799 Trimers
+ -> 25456 total fragments
+
+[2024-08-24 08:36:00.087 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:36:00.087 r0 PERFORMANCE] Total energy: E_RHF: -35752.72085 E_MP2_OS: -83.58668725 E_MP2_SS: -29.83795153 E_MP2: -113.4246388 E_total: -35866.14549
+[2024-08-24 08:36:00.123 r0 PERFORMANCE] Kinetic energy: 0.870220
+[2024-08-24 08:36:00.123 r0 PERFORMANCE] Timestep 44 took 26.567601, SP: 0 FLOP/s, DP: 3.138 PFLOP/s
+[2024-08-24 08:36:00.270 r0 PERFORMANCE] Queue building took 0.068179
+[2024-08-24 08:36:00.414 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6513 Dimers
+ -> 18785 Trimers
+ -> 25442 total fragments
+
+[2024-08-24 08:36:26.714 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:36:26.714 r0 PERFORMANCE] Total energy: E_RHF: -35752.72061 E_MP2_OS: -83.61670701 E_MP2_SS: -29.83797505 E_MP2: -113.4546821 E_total: -35866.17529
+[2024-08-24 08:36:26.750 r0 PERFORMANCE] Kinetic energy: 0.904054
+[2024-08-24 08:36:26.750 r0 PERFORMANCE] Timestep 45 took 26.565182, SP: 0 FLOP/s, DP: 3.145 PFLOP/s
+[2024-08-24 08:36:26.926 r0 PERFORMANCE] Queue building took 0.092873
+[2024-08-24 08:36:27.039 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6513 Dimers
+ -> 18785 Trimers
+ -> 25442 total fragments
+
+[2024-08-24 08:36:53.296 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:36:53.296 r0 PERFORMANCE] Total energy: E_RHF: -35752.68308 E_MP2_OS: -83.65486897 E_MP2_SS: -29.84050489 E_MP2: -113.4953739 E_total: -35866.17845
+[2024-08-24 08:36:53.332 r0 PERFORMANCE] Kinetic energy: 0.912503
+[2024-08-24 08:36:53.332 r0 PERFORMANCE] Timestep 46 took 26.511719, SP: 0 FLOP/s, DP: 3.151 PFLOP/s
+[2024-08-24 08:36:53.518 r0 PERFORMANCE] Queue building took 0.140305
+[2024-08-24 08:36:53.621 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6514 Dimers
+ -> 18819 Trimers
+ -> 25477 total fragments
+
+[2024-08-24 08:37:19.925 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:37:19.925 r0 PERFORMANCE] Total energy: E_RHF: -35752.62106 E_MP2_OS: -83.69410271 E_MP2_SS: -29.84613097 E_MP2: -113.5402337 E_total: -35866.16129
+[2024-08-24 08:37:19.960 r0 PERFORMANCE] Kinetic energy: 0.896719
+[2024-08-24 08:37:19.960 r0 PERFORMANCE] Timestep 47 took 26.588158, SP: 0 FLOP/s, DP: 3.158 PFLOP/s
+[2024-08-24 08:37:20.141 r0 PERFORMANCE] Queue building took 0.091453
+[2024-08-24 08:37:20.243 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6511 Dimers
+ -> 18819 Trimers
+ -> 25474 total fragments
+
+[2024-08-24 08:37:46.583 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:37:46.583 r0 PERFORMANCE] Total energy: E_RHF: -35752.56709 E_MP2_OS: -83.73872845 E_MP2_SS: -29.85877182 E_MP2: -113.5975003 E_total: -35866.16459
+[2024-08-24 08:37:46.619 r0 PERFORMANCE] Kinetic energy: 0.875937
+[2024-08-24 08:37:46.619 r0 PERFORMANCE] Timestep 48 took 26.584956, SP: 0 FLOP/s, DP: 3.164 PFLOP/s
+[2024-08-24 08:37:46.814 r0 PERFORMANCE] Queue building took 0.111907
+[2024-08-24 08:37:46.923 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6512 Dimers
+ -> 18819 Trimers
+ -> 25475 total fragments
+
+[2024-08-24 08:38:13.260 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:38:13.260 r0 PERFORMANCE] Total energy: E_RHF: -35752.54326 E_MP2_OS: -83.75763161 E_MP2_SS: -29.86751856 E_MP2: -113.6251502 E_total: -35866.16841
+[2024-08-24 08:38:13.294 r0 PERFORMANCE] Kinetic energy: 0.865031
+[2024-08-24 08:38:13.294 r0 PERFORMANCE] Timestep 49 took 26.612094, SP: 0 FLOP/s, DP: 3.169 PFLOP/s
+[2024-08-24 08:38:13.461 r0 PERFORMANCE] Queue building took 0.079386
+[2024-08-24 08:38:13.580 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6512 Dimers
+ -> 18837 Trimers
+ -> 25493 total fragments
+
+[2024-08-24 08:38:39.933 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:38:39.933 r0 PERFORMANCE] Total energy: E_RHF: -35752.54939 E_MP2_OS: -83.75854975 E_MP2_SS: -29.87426632 E_MP2: -113.6328161 E_total: -35866.18221
+[2024-08-24 08:38:39.968 r0 PERFORMANCE] Kinetic energy: 0.861806
+[2024-08-24 08:38:39.968 r0 PERFORMANCE] Timestep 50 took 26.611399, SP: 0 FLOP/s, DP: 3.175 PFLOP/s
+[2024-08-24 08:38:40.158 r0 PERFORMANCE] Queue building took 0.130178
+[2024-08-24 08:38:40.257 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6511 Dimers
+ -> 18837 Trimers
+ -> 25492 total fragments
+
+[2024-08-24 08:39:06.601 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:39:06.601 r0 PERFORMANCE] Total energy: E_RHF: -35752.56933 E_MP2_OS: -83.73854392 E_MP2_SS: -29.87518916 E_MP2: -113.6137331 E_total: -35866.18306
+[2024-08-24 08:39:06.635 r0 PERFORMANCE] Kinetic energy: 0.856612
+[2024-08-24 08:39:06.635 r0 PERFORMANCE] Timestep 51 took 26.611201, SP: 0 FLOP/s, DP: 3.181 PFLOP/s
+[2024-08-24 08:39:06.783 r0 PERFORMANCE] Queue building took 0.092337
+[2024-08-24 08:39:06.901 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6511 Dimers
+ -> 18813 Trimers
+ -> 25468 total fragments
+
+[2024-08-24 08:39:33.243 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:39:33.244 r0 PERFORMANCE] Total energy: E_RHF: -35752.59438 E_MP2_OS: -83.71458765 E_MP2_SS: -29.87367671 E_MP2: -113.5882644 E_total: -35866.18264
+[2024-08-24 08:39:33.277 r0 PERFORMANCE] Kinetic energy: 0.850567
+[2024-08-24 08:39:33.277 r0 PERFORMANCE] Timestep 52 took 26.589633, SP: 0 FLOP/s, DP: 3.186 PFLOP/s
+[2024-08-24 08:39:33.498 r0 PERFORMANCE] Queue building took 0.143923
+[2024-08-24 08:39:33.591 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6512 Dimers
+ -> 18826 Trimers
+ -> 25482 total fragments
+
+[2024-08-24 08:39:59.913 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:39:59.913 r0 PERFORMANCE] Total energy: E_RHF: -35752.62622 E_MP2_OS: -83.68950783 E_MP2_SS: -29.86748355 E_MP2: -113.5569914 E_total: -35866.18322
+[2024-08-24 08:39:59.948 r0 PERFORMANCE] Kinetic energy: 0.857545
+[2024-08-24 08:39:59.948 r0 PERFORMANCE] Timestep 53 took 26.617695, SP: 0 FLOP/s, DP: 3.191 PFLOP/s
+[2024-08-24 08:40:00.092 r0 PERFORMANCE] Queue building took 0.072941
+[2024-08-24 08:40:00.211 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6513 Dimers
+ -> 18759 Trimers
+ -> 25416 total fragments
+
+[2024-08-24 08:40:26.471 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:40:26.471 r0 PERFORMANCE] Total energy: E_RHF: -35752.66532 E_MP2_OS: -83.68065806 E_MP2_SS: -29.86167259 E_MP2: -113.5423307 E_total: -35866.20765
+[2024-08-24 08:40:26.509 r0 PERFORMANCE] Kinetic energy: 0.887721
+[2024-08-24 08:40:26.509 r0 PERFORMANCE] Timestep 54 took 26.499098, SP: 0 FLOP/s, DP: 3.196 PFLOP/s
+[2024-08-24 08:40:26.688 r0 PERFORMANCE] Queue building took 0.116726
+[2024-08-24 08:40:26.784 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6512 Dimers
+ -> 18693 Trimers
+ -> 25349 total fragments
+
+[2024-08-24 08:40:52.982 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:40:52.982 r0 PERFORMANCE] Total energy: E_RHF: -35752.69892 E_MP2_OS: -83.66542831 E_MP2_SS: -29.84863286 E_MP2: -113.5140612 E_total: -35866.21298
+[2024-08-24 08:40:53.016 r0 PERFORMANCE] Kinetic energy: 0.931564
+[2024-08-24 08:40:53.016 r0 PERFORMANCE] Timestep 55 took 26.447484, SP: 0 FLOP/s, DP: 3.201 PFLOP/s
+[2024-08-24 08:40:53.195 r0 PERFORMANCE] Queue building took 0.142116
+[2024-08-24 08:40:53.290 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6509 Dimers
+ -> 18635 Trimers
+ -> 25288 total fragments
+
+[2024-08-24 08:41:19.430 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:41:19.430 r0 PERFORMANCE] Total energy: E_RHF: -35752.70555 E_MP2_OS: -83.68730156 E_MP2_SS: -29.84705892 E_MP2: -113.5343605 E_total: -35866.23991
+[2024-08-24 08:41:19.466 r0 PERFORMANCE] Kinetic energy: 0.963960
+[2024-08-24 08:41:19.466 r0 PERFORMANCE] Timestep 56 took 26.422571, SP: 0 FLOP/s, DP: 3.205 PFLOP/s
+[2024-08-24 08:41:19.660 r0 PERFORMANCE] Queue building took 0.082061
+[2024-08-24 08:41:19.788 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6509 Dimers
+ -> 18635 Trimers
+ -> 25288 total fragments
+
+[2024-08-24 08:41:45.895 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:41:45.895 r0 PERFORMANCE] Total energy: E_RHF: -35752.6744 E_MP2_OS: -83.71027216 E_MP2_SS: -29.84667551 E_MP2: -113.5569477 E_total: -35866.23135
+[2024-08-24 08:41:45.931 r0 PERFORMANCE] Kinetic energy: 0.964888
+[2024-08-24 08:41:45.931 r0 PERFORMANCE] Timestep 57 took 26.377304, SP: 0 FLOP/s, DP: 3.21 PFLOP/s
+[2024-08-24 08:41:46.122 r0 PERFORMANCE] Queue building took 0.111907
+[2024-08-24 08:41:46.246 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6508 Dimers
+ -> 18618 Trimers
+ -> 25270 total fragments
+
+[2024-08-24 08:42:12.939 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:42:12.939 r0 PERFORMANCE] Total energy: E_RHF: -35752.62658 E_MP2_OS: -83.72803297 E_MP2_SS: -29.84822228 E_MP2: -113.5762553 E_total: -35866.20284
+[2024-08-24 08:42:12.974 r0 PERFORMANCE] Kinetic energy: 0.939171
+[2024-08-24 08:42:12.974 r0 PERFORMANCE] Timestep 58 took 26.979661, SP: 0 FLOP/s, DP: 3.213 PFLOP/s
+[2024-08-24 08:42:13.156 r0 PERFORMANCE] Queue building took 0.128174
+[2024-08-24 08:42:13.266 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6507 Dimers
+ -> 18597 Trimers
+ -> 25248 total fragments
+
+[2024-08-24 08:42:39.345 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:42:39.345 r0 PERFORMANCE] Total energy: E_RHF: -35752.59807 E_MP2_OS: -83.72673277 E_MP2_SS: -29.84730124 E_MP2: -113.574034 E_total: -35866.1721
+[2024-08-24 08:42:39.385 r0 PERFORMANCE] Kinetic energy: 0.908022
+[2024-08-24 08:42:39.385 r0 PERFORMANCE] Timestep 59 took 26.359776, SP: 0 FLOP/s, DP: 3.217 PFLOP/s
+[2024-08-24 08:42:39.584 r0 PERFORMANCE] Queue building took 0.082421
+[2024-08-24 08:42:39.677 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6507 Dimers
+ -> 18597 Trimers
+ -> 25248 total fragments
+
+[2024-08-24 08:43:05.743 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:43:05.743 r0 PERFORMANCE] Total energy: E_RHF: -35752.60891 E_MP2_OS: -83.70265767 E_MP2_SS: -29.84286569 E_MP2: -113.5455234 E_total: -35866.15443
+[2024-08-24 08:43:05.777 r0 PERFORMANCE] Kinetic energy: 0.886608
+[2024-08-24 08:43:05.777 r0 PERFORMANCE] Timestep 60 took 26.287336, SP: 0 FLOP/s, DP: 3.221 PFLOP/s
+[2024-08-24 08:43:05.976 r0 PERFORMANCE] Queue building took 0.098775
+[2024-08-24 08:43:06.073 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6507 Dimers
+ -> 18613 Trimers
+ -> 25264 total fragments
+
+[2024-08-24 08:43:32.163 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:43:32.163 r0 PERFORMANCE] Total energy: E_RHF: -35752.64885 E_MP2_OS: -83.6621774 E_MP2_SS: -29.8351025 E_MP2: -113.4972799 E_total: -35866.14613
+[2024-08-24 08:43:32.198 r0 PERFORMANCE] Kinetic energy: 0.871082
+[2024-08-24 08:43:32.198 r0 PERFORMANCE] Timestep 61 took 26.334458, SP: 0 FLOP/s, DP: 3.225 PFLOP/s
+[2024-08-24 08:43:32.343 r0 PERFORMANCE] Queue building took 0.101528
+[2024-08-24 08:43:32.477 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6506 Dimers
+ -> 18596 Trimers
+ -> 25246 total fragments
+
+[2024-08-24 08:43:58.614 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:43:58.614 r0 PERFORMANCE] Total energy: E_RHF: -35752.69137 E_MP2_OS: -83.6138093 E_MP2_SS: -29.82443885 E_MP2: -113.4382482 E_total: -35866.12962
+[2024-08-24 08:43:58.650 r0 PERFORMANCE] Kinetic energy: 0.851328
+[2024-08-24 08:43:58.650 r0 PERFORMANCE] Timestep 62 took 26.411308, SP: 0 FLOP/s, DP: 3.229 PFLOP/s
+[2024-08-24 08:43:58.827 r0 PERFORMANCE] Queue building took 0.105083
+[2024-08-24 08:43:58.940 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6506 Dimers
+ -> 18608 Trimers
+ -> 25258 total fragments
+
+[2024-08-24 08:44:25.052 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:44:25.052 r0 PERFORMANCE] Total energy: E_RHF: -35752.72392 E_MP2_OS: -83.5760279 E_MP2_SS: -29.81524859 E_MP2: -113.3912765 E_total: -35866.11519
+[2024-08-24 08:44:25.089 r0 PERFORMANCE] Kinetic energy: 0.833828
+[2024-08-24 08:44:25.089 r0 PERFORMANCE] Timestep 63 took 26.370812, SP: 0 FLOP/s, DP: 3.233 PFLOP/s
+[2024-08-24 08:44:25.300 r0 PERFORMANCE] Queue building took 0.168397
+[2024-08-24 08:44:25.390 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6506 Dimers
+ -> 18612 Trimers
+ -> 25262 total fragments
+
+[2024-08-24 08:44:51.496 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:44:51.496 r0 PERFORMANCE] Total energy: E_RHF: -35752.75314 E_MP2_OS: -83.55971923 E_MP2_SS: -29.80931935 E_MP2: -113.3690386 E_total: -35866.12218
+[2024-08-24 08:44:51.532 r0 PERFORMANCE] Kinetic energy: 0.839751
+[2024-08-24 08:44:51.532 r0 PERFORMANCE] Timestep 64 took 26.403025, SP: 0 FLOP/s, DP: 3.237 PFLOP/s
+[2024-08-24 08:44:51.690 r0 PERFORMANCE] Queue building took 0.072445
+[2024-08-24 08:44:51.809 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6504 Dimers
+ -> 18612 Trimers
+ -> 25260 total fragments
+
+[2024-08-24 08:45:17.903 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:45:17.903 r0 PERFORMANCE] Total energy: E_RHF: -35752.77726 E_MP2_OS: -83.57593306 E_MP2_SS: -29.81117979 E_MP2: -113.3871128 E_total: -35866.16437
+[2024-08-24 08:45:17.939 r0 PERFORMANCE] Kinetic energy: 0.874459
+[2024-08-24 08:45:17.939 r0 PERFORMANCE] Timestep 65 took 26.342101, SP: 0 FLOP/s, DP: 3.24 PFLOP/s
+[2024-08-24 08:45:18.122 r0 PERFORMANCE] Queue building took 0.131484
+[2024-08-24 08:45:18.238 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6505 Dimers
+ -> 18613 Trimers
+ -> 25262 total fragments
+
+[2024-08-24 08:45:44.306 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:45:44.306 r0 PERFORMANCE] Total energy: E_RHF: -35752.77609 E_MP2_OS: -83.62016824 E_MP2_SS: -29.82066498 E_MP2: -113.4408332 E_total: -35866.21692
+[2024-08-24 08:45:44.339 r0 PERFORMANCE] Kinetic energy: 0.915802
+[2024-08-24 08:45:44.339 r0 PERFORMANCE] Timestep 66 took 26.352051, SP: 0 FLOP/s, DP: 3.244 PFLOP/s
+[2024-08-24 08:45:44.492 r0 PERFORMANCE] Queue building took 0.092666
+[2024-08-24 08:45:44.636 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6503 Dimers
+ -> 18598 Trimers
+ -> 25245 total fragments
+
+[2024-08-24 08:46:10.718 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:46:10.718 r0 PERFORMANCE] Total energy: E_RHF: -35752.73594 E_MP2_OS: -83.66988207 E_MP2_SS: -29.83190523 E_MP2: -113.5017873 E_total: -35866.23773
+[2024-08-24 08:46:10.754 r0 PERFORMANCE] Kinetic energy: 0.937339
+[2024-08-24 08:46:10.754 r0 PERFORMANCE] Timestep 67 took 26.362236, SP: 0 FLOP/s, DP: 3.247 PFLOP/s
+[2024-08-24 08:46:10.901 r0 PERFORMANCE] Queue building took 0.074845
+[2024-08-24 08:46:11.018 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6501 Dimers
+ -> 18575 Trimers
+ -> 25220 total fragments
+
+[2024-08-24 08:46:37.069 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:46:37.069 r0 PERFORMANCE] Total energy: E_RHF: -35752.67108 E_MP2_OS: -83.72310249 E_MP2_SS: -29.8468505 E_MP2: -113.569953 E_total: -35866.24103
+[2024-08-24 08:46:37.105 r0 PERFORMANCE] Kinetic energy: 0.932313
+[2024-08-24 08:46:37.105 r0 PERFORMANCE] Timestep 68 took 26.297770, SP: 0 FLOP/s, DP: 3.25 PFLOP/s
+[2024-08-24 08:46:37.246 r0 PERFORMANCE] Queue building took 0.107995
+[2024-08-24 08:46:37.398 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6499 Dimers
+ -> 18610 Trimers
+ -> 25253 total fragments
+
+[2024-08-24 08:47:03.480 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:47:03.480 r0 PERFORMANCE] Total energy: E_RHF: -35752.61409 E_MP2_OS: -83.75199243 E_MP2_SS: -29.85691204 E_MP2: -113.6089045 E_total: -35866.223
+[2024-08-24 08:47:03.513 r0 PERFORMANCE] Kinetic energy: 0.913897
+[2024-08-24 08:47:03.513 r0 PERFORMANCE] Timestep 69 took 26.378726, SP: 0 FLOP/s, DP: 3.254 PFLOP/s
+[2024-08-24 08:47:03.666 r0 PERFORMANCE] Queue building took 0.105640
+[2024-08-24 08:47:03.787 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6499 Dimers
+ -> 18651 Trimers
+ -> 25294 total fragments
+
+[2024-08-24 08:47:29.926 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:47:29.926 r0 PERFORMANCE] Total energy: E_RHF: -35752.59225 E_MP2_OS: -83.76059165 E_MP2_SS: -29.86369792 E_MP2: -113.6242896 E_total: -35866.21654
+[2024-08-24 08:47:29.960 r0 PERFORMANCE] Kinetic energy: 0.896602
+[2024-08-24 08:47:29.960 r0 PERFORMANCE] Timestep 70 took 26.404473, SP: 0 FLOP/s, DP: 3.257 PFLOP/s
+[2024-08-24 08:47:30.142 r0 PERFORMANCE] Queue building took 0.111225
+[2024-08-24 08:47:30.240 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6499 Dimers
+ -> 18651 Trimers
+ -> 25294 total fragments
+
+[2024-08-24 08:47:56.401 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:47:56.401 r0 PERFORMANCE] Total energy: E_RHF: -35752.60513 E_MP2_OS: -83.74375527 E_MP2_SS: -29.86426628 E_MP2: -113.6080216 E_total: -35866.21315
+[2024-08-24 08:47:56.438 r0 PERFORMANCE] Kinetic energy: 0.881790
+[2024-08-24 08:47:56.438 r0 PERFORMANCE] Timestep 71 took 26.413650, SP: 0 FLOP/s, DP: 3.26 PFLOP/s
+[2024-08-24 08:47:56.620 r0 PERFORMANCE] Queue building took 0.122694
+[2024-08-24 08:47:56.720 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6499 Dimers
+ -> 18651 Trimers
+ -> 25294 total fragments
+
+[2024-08-24 08:48:22.896 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:48:22.896 r0 PERFORMANCE] Total energy: E_RHF: -35752.63758 E_MP2_OS: -83.70402533 E_MP2_SS: -29.85702333 E_MP2: -113.5610487 E_total: -35866.19863
+[2024-08-24 08:48:22.930 r0 PERFORMANCE] Kinetic energy: 0.866215
+[2024-08-24 08:48:22.930 r0 PERFORMANCE] Timestep 72 took 26.443337, SP: 0 FLOP/s, DP: 3.263 PFLOP/s
+[2024-08-24 08:48:23.133 r0 PERFORMANCE] Queue building took 0.118793
+[2024-08-24 08:48:23.224 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6497 Dimers
+ -> 18652 Trimers
+ -> 25293 total fragments
+
+[2024-08-24 08:48:49.352 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:48:49.352 r0 PERFORMANCE] Total energy: E_RHF: -35752.67513 E_MP2_OS: -83.65845057 E_MP2_SS: -29.84572064 E_MP2: -113.5041712 E_total: -35866.1793
+[2024-08-24 08:48:49.385 r0 PERFORMANCE] Kinetic energy: 0.853518
+[2024-08-24 08:48:49.385 r0 PERFORMANCE] Timestep 73 took 26.377883, SP: 0 FLOP/s, DP: 3.266 PFLOP/s
+[2024-08-24 08:48:49.540 r0 PERFORMANCE] Queue building took 0.100329
+[2024-08-24 08:48:49.653 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6497 Dimers
+ -> 18652 Trimers
+ -> 25293 total fragments
+
+[2024-08-24 08:49:15.823 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:49:15.823 r0 PERFORMANCE] Total energy: E_RHF: -35752.7085 E_MP2_OS: -83.62328302 E_MP2_SS: -29.83495056 E_MP2: -113.4582336 E_total: -35866.16674
+[2024-08-24 08:49:15.860 r0 PERFORMANCE] Kinetic energy: 0.852291
+[2024-08-24 08:49:15.860 r0 PERFORMANCE] Timestep 74 took 26.429387, SP: 0 FLOP/s, DP: 3.269 PFLOP/s
+[2024-08-24 08:49:16.046 r0 PERFORMANCE] Queue building took 0.136947
+[2024-08-24 08:49:16.141 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6496 Dimers
+ -> 18672 Trimers
+ -> 25312 total fragments
+
+[2024-08-24 08:49:42.316 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:49:42.317 r0 PERFORMANCE] Total energy: E_RHF: -35752.73337 E_MP2_OS: -83.60845778 E_MP2_SS: -29.82757568 E_MP2: -113.4360335 E_total: -35866.1694
+[2024-08-24 08:49:42.354 r0 PERFORMANCE] Kinetic energy: 0.870045
+[2024-08-24 08:49:42.354 r0 PERFORMANCE] Timestep 75 took 26.447664, SP: 0 FLOP/s, DP: 3.271 PFLOP/s
+[2024-08-24 08:49:42.540 r0 PERFORMANCE] Queue building took 0.099034
+[2024-08-24 08:49:42.640 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6495 Dimers
+ -> 18669 Trimers
+ -> 25308 total fragments
+
+[2024-08-24 08:50:08.790 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:50:08.791 r0 PERFORMANCE] Total energy: E_RHF: -35752.74841 E_MP2_OS: -83.62276015 E_MP2_SS: -29.82714288 E_MP2: -113.449903 E_total: -35866.19831
+[2024-08-24 08:50:08.827 r0 PERFORMANCE] Kinetic energy: 0.905974
+[2024-08-24 08:50:08.827 r0 PERFORMANCE] Timestep 76 took 26.393432, SP: 0 FLOP/s, DP: 3.274 PFLOP/s
+[2024-08-24 08:50:08.978 r0 PERFORMANCE] Queue building took 0.098597
+[2024-08-24 08:50:09.097 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6494 Dimers
+ -> 18634 Trimers
+ -> 25272 total fragments
+
+[2024-08-24 08:50:35.234 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:50:35.234 r0 PERFORMANCE] Total energy: E_RHF: -35752.74485 E_MP2_OS: -83.64995388 E_MP2_SS: -29.82991795 E_MP2: -113.4798718 E_total: -35866.22472
+[2024-08-24 08:50:35.268 r0 PERFORMANCE] Kinetic energy: 0.944123
+[2024-08-24 08:50:35.268 r0 PERFORMANCE] Timestep 77 took 26.392434, SP: 0 FLOP/s, DP: 3.277 PFLOP/s
+[2024-08-24 08:50:35.442 r0 PERFORMANCE] Queue building took 0.084838
+[2024-08-24 08:50:35.542 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6493 Dimers
+ -> 18634 Trimers
+ -> 25271 total fragments
+
+[2024-08-24 08:51:01.684 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:51:01.684 r0 PERFORMANCE] Total energy: E_RHF: -35752.71714 E_MP2_OS: -83.68381671 E_MP2_SS: -29.83576063 E_MP2: -113.5195773 E_total: -35866.23672
+[2024-08-24 08:51:01.720 r0 PERFORMANCE] Kinetic energy: 0.963350
+[2024-08-24 08:51:01.720 r0 PERFORMANCE] Timestep 78 took 26.365812, SP: 0 FLOP/s, DP: 3.279 PFLOP/s
+[2024-08-24 08:51:01.882 r0 PERFORMANCE] Queue building took 0.112906
+[2024-08-24 08:51:02.010 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6491 Dimers
+ -> 18634 Trimers
+ -> 25269 total fragments
+
+[2024-08-24 08:51:28.120 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:51:28.120 r0 PERFORMANCE] Total energy: E_RHF: -35752.67471 E_MP2_OS: -83.69797491 E_MP2_SS: -29.83642856 E_MP2: -113.5344035 E_total: -35866.20912
+[2024-08-24 08:51:28.155 r0 PERFORMANCE] Kinetic energy: 0.955722
+[2024-08-24 08:51:28.155 r0 PERFORMANCE] Timestep 79 took 26.389940, SP: 0 FLOP/s, DP: 3.282 PFLOP/s
+[2024-08-24 08:51:28.304 r0 PERFORMANCE] Queue building took 0.061318
+[2024-08-24 08:51:28.428 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6491 Dimers
+ -> 18551 Trimers
+ -> 25186 total fragments
+
+[2024-08-24 08:51:54.442 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:51:54.442 r0 PERFORMANCE] Total energy: E_RHF: -35752.64492 E_MP2_OS: -83.70428882 E_MP2_SS: -29.83794289 E_MP2: -113.5422317 E_total: -35866.18716
+[2024-08-24 08:51:54.475 r0 PERFORMANCE] Kinetic energy: 0.933845
+[2024-08-24 08:51:54.475 r0 PERFORMANCE] Timestep 80 took 26.238683, SP: 0 FLOP/s, DP: 3.284 PFLOP/s
+[2024-08-24 08:51:54.676 r0 PERFORMANCE] Queue building took 0.098028
+[2024-08-24 08:51:54.779 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6491 Dimers
+ -> 18566 Trimers
+ -> 25201 total fragments
+
+[2024-08-24 08:52:20.776 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:52:20.777 r0 PERFORMANCE] Total energy: E_RHF: -35752.65071 E_MP2_OS: -83.6871766 E_MP2_SS: -29.83409219 E_MP2: -113.5212688 E_total: -35866.17197
+[2024-08-24 08:52:20.810 r0 PERFORMANCE] Kinetic energy: 0.917178
+[2024-08-24 08:52:20.810 r0 PERFORMANCE] Timestep 81 took 26.260181, SP: 0 FLOP/s, DP: 3.287 PFLOP/s
+[2024-08-24 08:52:20.937 r0 PERFORMANCE] Queue building took 0.081940
+[2024-08-24 08:52:21.078 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18579 Trimers
+ -> 25213 total fragments
+
+[2024-08-24 08:52:47.112 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:52:47.112 r0 PERFORMANCE] Total energy: E_RHF: -35752.69021 E_MP2_OS: -83.65688582 E_MP2_SS: -29.82767242 E_MP2: -113.4845582 E_total: -35866.17477
+[2024-08-24 08:52:47.148 r0 PERFORMANCE] Kinetic energy: 0.911081
+[2024-08-24 08:52:47.148 r0 PERFORMANCE] Timestep 82 took 26.305767, SP: 0 FLOP/s, DP: 3.289 PFLOP/s
+[2024-08-24 08:52:47.298 r0 PERFORMANCE] Queue building took 0.054517
+[2024-08-24 08:52:47.412 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6489 Dimers
+ -> 18578 Trimers
+ -> 25211 total fragments
+
+[2024-08-24 08:53:13.469 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:53:13.470 r0 PERFORMANCE] Total energy: E_RHF: -35752.7323 E_MP2_OS: -83.61116883 E_MP2_SS: -29.81611101 E_MP2: -113.4272798 E_total: -35866.15958
+[2024-08-24 08:53:13.505 r0 PERFORMANCE] Kinetic energy: 0.902192
+[2024-08-24 08:53:13.505 r0 PERFORMANCE] Timestep 83 took 26.276209, SP: 0 FLOP/s, DP: 3.291 PFLOP/s
+[2024-08-24 08:53:13.713 r0 PERFORMANCE] Queue building took 0.135319
+[2024-08-24 08:53:13.803 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6488 Dimers
+ -> 18610 Trimers
+ -> 25242 total fragments
+
+[2024-08-24 08:53:39.833 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:53:39.833 r0 PERFORMANCE] Total energy: E_RHF: -35752.74993 E_MP2_OS: -83.57886736 E_MP2_SS: -29.80809661 E_MP2: -113.386964 E_total: -35866.13689
+[2024-08-24 08:53:39.866 r0 PERFORMANCE] Kinetic energy: 0.882214
+[2024-08-24 08:53:39.866 r0 PERFORMANCE] Timestep 84 took 26.295046, SP: 0 FLOP/s, DP: 3.294 PFLOP/s
+[2024-08-24 08:53:40.011 r0 PERFORMANCE] Queue building took 0.101321
+[2024-08-24 08:53:40.136 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18623 Trimers
+ -> 25257 total fragments
+
+[2024-08-24 08:54:06.240 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:54:06.240 r0 PERFORMANCE] Total energy: E_RHF: -35752.74823 E_MP2_OS: -83.57320426 E_MP2_SS: -29.80714787 E_MP2: -113.3803521 E_total: -35866.12858
+[2024-08-24 08:54:06.276 r0 PERFORMANCE] Kinetic energy: 0.869596
+[2024-08-24 08:54:06.276 r0 PERFORMANCE] Timestep 85 took 26.373104, SP: 0 FLOP/s, DP: 3.296 PFLOP/s
+[2024-08-24 08:54:06.477 r0 PERFORMANCE] Queue building took 0.103222
+[2024-08-24 08:54:06.596 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6492 Dimers
+ -> 18575 Trimers
+ -> 25211 total fragments
+
+[2024-08-24 08:54:32.693 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:54:32.694 r0 PERFORMANCE] Total energy: E_RHF: -35752.74784 E_MP2_OS: -83.59557635 E_MP2_SS: -29.81294091 E_MP2: -113.4085173 E_total: -35866.15636
+[2024-08-24 08:54:32.729 r0 PERFORMANCE] Kinetic energy: 0.888471
+[2024-08-24 08:54:32.729 r0 PERFORMANCE] Timestep 86 took 26.372380, SP: 0 FLOP/s, DP: 3.298 PFLOP/s
+[2024-08-24 08:54:32.932 r0 PERFORMANCE] Queue building took 0.119163
+[2024-08-24 08:54:33.028 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6491 Dimers
+ -> 18591 Trimers
+ -> 25226 total fragments
+
+[2024-08-24 08:54:59.097 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:54:59.097 r0 PERFORMANCE] Total energy: E_RHF: -35752.74434 E_MP2_OS: -83.63366891 E_MP2_SS: -29.82143282 E_MP2: -113.4551017 E_total: -35866.19944
+[2024-08-24 08:54:59.132 r0 PERFORMANCE] Kinetic energy: 0.929833
+[2024-08-24 08:54:59.132 r0 PERFORMANCE] Timestep 87 took 26.336574, SP: 0 FLOP/s, DP: 3.3 PFLOP/s
+[2024-08-24 08:54:59.331 r0 PERFORMANCE] Queue building took 0.093128
+[2024-08-24 08:54:59.424 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6489 Dimers
+ -> 18588 Trimers
+ -> 25221 total fragments
+
+[2024-08-24 08:55:25.484 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:55:25.484 r0 PERFORMANCE] Total energy: E_RHF: -35752.71404 E_MP2_OS: -83.68454393 E_MP2_SS: -29.83338668 E_MP2: -113.5179306 E_total: -35866.23197
+[2024-08-24 08:55:25.537 r0 PERFORMANCE] Kinetic energy: 0.957515
+[2024-08-24 08:55:25.537 r0 PERFORMANCE] Timestep 88 took 26.316551, SP: 0 FLOP/s, DP: 3.302 PFLOP/s
+[2024-08-24 08:55:25.682 r0 PERFORMANCE] Queue building took 0.113537
+[2024-08-24 08:55:25.811 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18588 Trimers
+ -> 25222 total fragments
+
+[2024-08-24 08:55:51.887 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:55:51.887 r0 PERFORMANCE] Total energy: E_RHF: -35752.65732 E_MP2_OS: -83.73138327 E_MP2_SS: -29.84422752 E_MP2: -113.5756108 E_total: -35866.23293
+[2024-08-24 08:55:51.921 r0 PERFORMANCE] Kinetic energy: 0.954510
+[2024-08-24 08:55:51.921 r0 PERFORMANCE] Timestep 89 took 26.357307, SP: 0 FLOP/s, DP: 3.304 PFLOP/s
+[2024-08-24 08:55:52.140 r0 PERFORMANCE] Queue building took 0.125966
+[2024-08-24 08:55:52.233 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18605 Trimers
+ -> 25239 total fragments
+
+[2024-08-24 08:56:18.297 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:56:18.297 r0 PERFORMANCE] Total energy: E_RHF: -35752.61329 E_MP2_OS: -83.75755576 E_MP2_SS: -29.84950822 E_MP2: -113.607064 E_total: -35866.22036
+[2024-08-24 08:56:18.334 r0 PERFORMANCE] Kinetic energy: 0.939773
+[2024-08-24 08:56:18.334 r0 PERFORMANCE] Timestep 90 took 26.338719, SP: 0 FLOP/s, DP: 3.307 PFLOP/s
+[2024-08-24 08:56:18.512 r0 PERFORMANCE] Queue building took 0.121183
+[2024-08-24 08:56:18.630 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18605 Trimers
+ -> 25239 total fragments
+
+[2024-08-24 08:56:44.703 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:56:44.703 r0 PERFORMANCE] Total energy: E_RHF: -35752.61484 E_MP2_OS: -83.75391459 E_MP2_SS: -29.84659302 E_MP2: -113.6005076 E_total: -35866.21535
+[2024-08-24 08:56:44.756 r0 PERFORMANCE] Kinetic energy: 0.935303
+[2024-08-24 08:56:44.756 r0 PERFORMANCE] Timestep 91 took 26.371938, SP: 0 FLOP/s, DP: 3.308 PFLOP/s
+[2024-08-24 08:56:44.914 r0 PERFORMANCE] Queue building took 0.098274
+[2024-08-24 08:56:45.069 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18645 Trimers
+ -> 25279 total fragments
+
+[2024-08-24 08:57:11.212 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:57:11.212 r0 PERFORMANCE] Total energy: E_RHF: -35752.65849 E_MP2_OS: -83.71743171 E_MP2_SS: -29.83406921 E_MP2: -113.5515009 E_total: -35866.20999
+[2024-08-24 08:57:11.249 r0 PERFORMANCE] Kinetic energy: 0.939087
+[2024-08-24 08:57:11.249 r0 PERFORMANCE] Timestep 92 took 26.436351, SP: 0 FLOP/s, DP: 3.31 PFLOP/s
+[2024-08-24 08:57:11.418 r0 PERFORMANCE] Queue building took 0.064899
+[2024-08-24 08:57:11.530 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18633 Trimers
+ -> 25267 total fragments
+
+[2024-08-24 08:57:37.689 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:57:37.689 r0 PERFORMANCE] Total energy: E_RHF: -35752.71626 E_MP2_OS: -83.67336975 E_MP2_SS: -29.82107675 E_MP2: -113.4944465 E_total: -35866.2107
+[2024-08-24 08:57:37.725 r0 PERFORMANCE] Kinetic energy: 0.935584
+[2024-08-24 08:57:37.725 r0 PERFORMANCE] Timestep 93 took 26.376263, SP: 0 FLOP/s, DP: 3.312 PFLOP/s
+[2024-08-24 08:57:37.889 r0 PERFORMANCE] Queue building took 0.094195
+[2024-08-24 08:57:37.998 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18633 Trimers
+ -> 25267 total fragments
+
+[2024-08-24 08:58:04.145 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:58:04.145 r0 PERFORMANCE] Total energy: E_RHF: -35752.75962 E_MP2_OS: -83.62603266 E_MP2_SS: -29.80750977 E_MP2: -113.4335424 E_total: -35866.19316
+[2024-08-24 08:58:04.182 r0 PERFORMANCE] Kinetic energy: 0.916618
+[2024-08-24 08:58:04.182 r0 PERFORMANCE] Timestep 94 took 26.396390, SP: 0 FLOP/s, DP: 3.314 PFLOP/s
+[2024-08-24 08:58:04.334 r0 PERFORMANCE] Queue building took 0.088788
+[2024-08-24 08:58:04.454 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6490 Dimers
+ -> 18633 Trimers
+ -> 25267 total fragments
+
+[2024-08-24 08:58:30.614 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:58:30.614 r0 PERFORMANCE] Total energy: E_RHF: -35752.78334 E_MP2_OS: -83.59045938 E_MP2_SS: -29.79708444 E_MP2: -113.3875438 E_total: -35866.17089
+[2024-08-24 08:58:30.647 r0 PERFORMANCE] Kinetic energy: 0.895168
+[2024-08-24 08:58:30.647 r0 PERFORMANCE] Timestep 95 took 26.410797, SP: 0 FLOP/s, DP: 3.316 PFLOP/s
+[2024-08-24 08:58:30.813 r0 PERFORMANCE] Queue building took 0.087043
+[2024-08-24 08:58:30.931 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6491 Dimers
+ -> 18633 Trimers
+ -> 25268 total fragments
+
+[2024-08-24 08:58:57.071 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:58:57.072 r0 PERFORMANCE] Total energy: E_RHF: -35752.79888 E_MP2_OS: -83.57717869 E_MP2_SS: -29.79231856 E_MP2: -113.3694972 E_total: -35866.16837
+[2024-08-24 08:58:57.108 r0 PERFORMANCE] Kinetic energy: 0.893179
+[2024-08-24 08:58:57.108 r0 PERFORMANCE] Timestep 96 took 26.392248, SP: 0 FLOP/s, DP: 3.318 PFLOP/s
+[2024-08-24 08:58:57.236 r0 PERFORMANCE] Queue building took 0.070801
+[2024-08-24 08:58:57.364 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6492 Dimers
+ -> 18609 Trimers
+ -> 25245 total fragments
+
+[2024-08-24 08:59:23.537 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:59:23.537 r0 PERFORMANCE] Total energy: E_RHF: -35752.80812 E_MP2_OS: -83.58697392 E_MP2_SS: -29.79299435 E_MP2: -113.3799683 E_total: -35866.18809
+[2024-08-24 08:59:23.571 r0 PERFORMANCE] Kinetic energy: 0.915369
+[2024-08-24 08:59:23.571 r0 PERFORMANCE] Timestep 97 took 26.409380, SP: 0 FLOP/s, DP: 3.32 PFLOP/s
+[2024-08-24 08:59:23.719 r0 PERFORMANCE] Queue building took 0.100977
+[2024-08-24 08:59:23.831 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6492 Dimers
+ -> 18609 Trimers
+ -> 25245 total fragments
+
+[2024-08-24 08:59:49.973 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 08:59:49.973 r0 PERFORMANCE] Total energy: E_RHF: -35752.80041 E_MP2_OS: -83.61538967 E_MP2_SS: -29.79814477 E_MP2: -113.4135344 E_total: -35866.21394
+[2024-08-24 08:59:50.009 r0 PERFORMANCE] Kinetic energy: 0.944075
+[2024-08-24 08:59:50.009 r0 PERFORMANCE] Timestep 98 took 26.405321, SP: 0 FLOP/s, DP: 3.322 PFLOP/s
+[2024-08-24 08:59:50.164 r0 PERFORMANCE] Queue building took 0.119425
+[2024-08-24 08:59:50.288 r0 PERFORMANCE] =======================================================
+                  Fragmentation queue                  
+=======================================================
+ -> 144 Monomers
+ -> 6492 Dimers
+ -> 18609 Trimers
+ -> 25245 total fragments
+
+[2024-08-24 09:00:16.428 r0 PERFORMANCE] =======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+[2024-08-24 09:00:16.428 r0 PERFORMANCE] Total energy: E_RHF: -35752.7706 E_MP2_OS: -83.65081513 E_MP2_SS: -29.80523366 E_MP2: -113.4560488 E_total: -35866.22664
+[2024-08-24 09:00:16.463 r0 PERFORMANCE] Kinetic energy: 0.959432
+[2024-08-24 09:00:16.463 r0 PERFORMANCE] Timestep 99 took 26.421046, SP: 0 FLOP/s, DP: 3.323 PFLOP/s
+[2024-08-24 09:00:16.496 r0 PERFORMANCE] Average timestep time: 26.711320
+[2024-08-24 09:00:16.499 r0 PERFORMANCE] Total flops: SP: 0 FLOPS, DP: 9305.7068 PFLOPS
+[2024-08-24 09:00:16.499 r0 PERFORMANCE] Performance: SP: 0 FLOP/s, DP: 3.321 PFLOP/s
+Total processing time 2891.155975 seconds
+
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries

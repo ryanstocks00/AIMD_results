@@ -24,8 +24,8 @@ _____ \         ~-+-~                   ___~=_______
 
 Commit no. used 9aebb21414bfc7c3035389d687942e4ef932d645
 
-Start of Calculation Local time: 2024-08-23 23:26:02
-Start of Calculation UTC time:   2024-08-24 06:26:02
+Start of Calculation Local time: 2024-08-24 12:12:00
+Start of Calculation UTC time:   2024-08-24 19:12:00
 
 ├── Calculation params
 │   ├── Title: n_2beg_dimer_30
@@ -94,19 +94,780 @@ Start of Calculation UTC time:   2024-08-24 06:26:02
 │   │   ├── Teams per node: 4
 │   │   ├── # GPUs per team: 1
 
-Queue building took 0.004133
-Current flop count SP: 0 FLOPS, DP: 85.485964 GFLOPS
-Current flop count SP: 0 FLOPS, DP: 188.79824 TFLOPS
-Current flop count SP: 0 FLOPS, DP: 1709.621 TFLOPS
-Current flop count SP: 0 FLOPS, DP: 3.9946369 PFLOPS
-Current flop count SP: 0 FLOPS, DP: 6.1797358 PFLOPS
-Timestep 0 took 7.185638
-Current total flops: SP: 0 FLOPS, DP: 7.751861 PFLOPS
-Current flop count SP: 0 FLOPS, DP: 9.9437774 PFLOPS
-Current flop count SP: 0 FLOPS, DP: 11.993502 PFLOPS
-Current flop count SP: 0 FLOPS, DP: 12.830907 PFLOPS
-Current flop count SP: 0 FLOPS, DP: 14.455575 PFLOPS
-Current flop count SP: 0 FLOPS, DP: 15.686064 PFLOPS
-srun: error: Node failure on nid003657
-slurmstepd: error: *** STEP 29627066.0 ON nid001025 CANCELLED AT 2024-08-24T06:31:00 DUE TO NODE FAILURE, SEE SLURMCTLD LOG FOR DETAILS ***
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Queue building took 0.004094
+Current flop count SP: 0 FLOPS, DP: 179.87752 GFLOPS
+Current flop count SP: 0 FLOPS, DP: 78.914211 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 1420.6777 TFLOPS
+Current flop count SP: 0 FLOPS, DP: 3.6969549 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 5.9073961 PFLOPS
+Timestep 0 took 6.099814
+Current total flops: SP: 0 FLOPS, DP: 7.7529504 PFLOPS
+Finalising timestep 0 of 100
+Current total flops: SP: 0 FLOPS, DP: 8.7442561 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.39228 E_MP2_OS: -83.8048817 E_MP2_SS: -30.21699839 E_MP2: -114.0218801 E_total: -35865.41416
+Kinetic energy: 0.000000
+Finalised timestep 0
+Finished timestep 0 of 100
+Current flop count SP: 0 FLOPS, DP: 9.9538614 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 12.2835 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 14.468022 PFLOPS
+Timestep 1 took 3.790209
+Current total flops: SP: 0 FLOPS, DP: 16.063851 PFLOPS
+Finalising timestep 1 of 100
+Current total flops: SP: 0 FLOPS, DP: 17.063432 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.42398 E_MP2_OS: -83.83206319 E_MP2_SS: -30.22513681 E_MP2: -114.0572 E_total: -35865.48118
+Kinetic energy: 0.062589
+Finalised timestep 1
+Finished timestep 1 of 100
+Current flop count SP: 0 FLOPS, DP: 18.322882 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 20.624869 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 22.831379 PFLOPS
+Timestep 2 took 3.757122
+Current total flops: SP: 0 FLOPS, DP: 24.37044 PFLOPS
+Finalising timestep 2 of 100
+Current total flops: SP: 0 FLOPS, DP: 25.375846 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.47396 E_MP2_OS: -83.90384232 E_MP2_SS: -30.24668144 E_MP2: -114.1505238 E_total: -35865.62449
+Kinetic energy: 0.198085
+Finalised timestep 2
+Finished timestep 2 of 100
+Current flop count SP: 0 FLOPS, DP: 26.638703 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 28.947488 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 31.16607 PFLOPS
+Timestep 3 took 3.746048
+Current total flops: SP: 0 FLOPS, DP: 32.695017 PFLOPS
+Finalising timestep 3 of 100
+Current total flops: SP: 0 FLOPS, DP: 33.698308 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.4793 E_MP2_OS: -83.99418302 E_MP2_SS: -30.27342257 E_MP2: -114.2676056 E_total: -35865.7469
+Kinetic energy: 0.318895
+Finalised timestep 3
+Finished timestep 3 of 100
+Current flop count SP: 0 FLOPS, DP: 34.946248 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 37.260378 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 39.426906 PFLOPS
+Timestep 4 took 3.823414
+Current total flops: SP: 0 FLOPS, DP: 41.028175 PFLOPS
+Finalising timestep 4 of 100
+Current total flops: SP: 0 FLOPS, DP: 42.031658 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.45188 E_MP2_OS: -84.07390881 E_MP2_SS: -30.29627117 E_MP2: -114.37018 E_total: -35865.82206
+Kinetic energy: 0.398555
+Finalised timestep 4
+Finished timestep 4 of 100
+Current flop count SP: 0 FLOPS, DP: 43.173773 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 45.439458 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 47.597049 PFLOPS
+Timestep 5 took 3.912643
+Current total flops: SP: 0 FLOPS, DP: 49.357046 PFLOPS
+Finalising timestep 5 of 100
+Current total flops: SP: 0 FLOPS, DP: 50.374798 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.45298 E_MP2_OS: -84.12087235 E_MP2_SS: -30.30852921 E_MP2: -114.4294016 E_total: -35865.88238
+Kinetic energy: 0.463670
+Finalised timestep 5
+Finished timestep 5 of 100
+Current flop count SP: 0 FLOPS, DP: 51.504187 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 53.779679 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 55.940141 PFLOPS
+Timestep 6 took 3.903252
+Current total flops: SP: 0 FLOPS, DP: 57.687855 PFLOPS
+Finalising timestep 6 of 100
+Current total flops: SP: 0 FLOPS, DP: 58.708548 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.50498 E_MP2_OS: -84.12701313 E_MP2_SS: -30.30833673 E_MP2: -114.4353499 E_total: -35865.94033
+Kinetic energy: 0.523435
+Finalised timestep 6
+Finished timestep 6 of 100
+Current flop count SP: 0 FLOPS, DP: 59.83947 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 62.126822 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 64.289947 PFLOPS
+Timestep 7 took 3.894156
+Current total flops: SP: 0 FLOPS, DP: 66.022878 PFLOPS
+Finalising timestep 7 of 100
+Current total flops: SP: 0 FLOPS, DP: 67.056728 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.56639 E_MP2_OS: -84.09461436 E_MP2_SS: -30.29691977 E_MP2: -114.3915341 E_total: -35865.95793
+Kinetic energy: 0.548767
+Finalised timestep 7
+Finished timestep 7 of 100
+Current flop count SP: 0 FLOPS, DP: 68.2084 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 70.506723 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 72.678565 PFLOPS
+Timestep 8 took 3.877081
+Current total flops: SP: 0 FLOPS, DP: 74.356215 PFLOPS
+Finalising timestep 8 of 100
+Current total flops: SP: 0 FLOPS, DP: 75.407329 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.58345 E_MP2_OS: -84.04834757 E_MP2_SS: -30.28305525 E_MP2: -114.3314028 E_total: -35865.91485
+Kinetic energy: 0.515671
+Finalised timestep 8
+Finished timestep 8 of 100
+Current flop count SP: 0 FLOPS, DP: 76.572668 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 78.876232 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 81.025425 PFLOPS
+Timestep 9 took 3.859980
+Current total flops: SP: 0 FLOPS, DP: 82.693722 PFLOPS
+Finalising timestep 9 of 100
+Current total flops: SP: 0 FLOPS, DP: 83.743075 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.54656 E_MP2_OS: -84.01764598 E_MP2_SS: -30.27615458 E_MP2: -114.2938006 E_total: -35865.84036
+Kinetic energy: 0.446858
+Finalised timestep 9
+Finished timestep 9 of 100
+Current flop count SP: 0 FLOPS, DP: 84.904819 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 87.222203 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 89.381628 PFLOPS
+Timestep 10 took 3.851641
+Current total flops: SP: 0 FLOPS, DP: 91.032341 PFLOPS
+Finalising timestep 10 of 100
+Current total flops: SP: 0 FLOPS, DP: 92.067087 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.48697 E_MP2_OS: -84.01749449 E_MP2_SS: -30.27942527 E_MP2: -114.2969198 E_total: -35865.78389
+Kinetic energy: 0.395072
+Finalised timestep 10
+Finished timestep 10 of 100
+Current flop count SP: 0 FLOPS, DP: 93.256499 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 95.569597 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 97.733214 PFLOPS
+Timestep 11 took 3.841321
+Current total flops: SP: 0 FLOPS, DP: 99.373416 PFLOPS
+Finalising timestep 11 of 100
+Current total flops: SP: 0 FLOPS, DP: 100.41065 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.43059 E_MP2_OS: -84.0565036 E_MP2_SS: -30.29382775 E_MP2: -114.3503314 E_total: -35865.78092
+Kinetic energy: 0.391354
+Finalised timestep 11
+Finished timestep 11 of 100
+Current flop count SP: 0 FLOPS, DP: 101.60145 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 103.91927 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 106.09638 PFLOPS
+Timestep 12 took 3.834860
+Current total flops: SP: 0 FLOPS, DP: 107.72174 PFLOPS
+Finalising timestep 12 of 100
+Current total flops: SP: 0 FLOPS, DP: 108.76151 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.3842 E_MP2_OS: -84.123796 E_MP2_SS: -30.31396351 E_MP2: -114.4377595 E_total: -35865.82196
+Kinetic energy: 0.429968
+Finalised timestep 12
+Finished timestep 12 of 100
+Current flop count SP: 0 FLOPS, DP: 109.95112 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 112.2663 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 114.45733 PFLOPS
+Timestep 13 took 3.825291
+Current total flops: SP: 0 FLOPS, DP: 116.05068 PFLOPS
+Finalising timestep 13 of 100
+Current total flops: SP: 0 FLOPS, DP: 117.11142 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.35363 E_MP2_OS: -84.19861375 E_MP2_SS: -30.33207096 E_MP2: -114.5306847 E_total: -35865.88432
+Kinetic energy: 0.490222
+Finalised timestep 13
+Finished timestep 13 of 100
+Current flop count SP: 0 FLOPS, DP: 118.29798 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 120.60901 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 122.79951 PFLOPS
+Timestep 14 took 3.823744
+Current total flops: SP: 0 FLOPS, DP: 124.39971 PFLOPS
+Finalising timestep 14 of 100
+Current total flops: SP: 0 FLOPS, DP: 125.63985 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.34936 E_MP2_OS: -84.26138897 E_MP2_SS: -30.34285466 E_MP2: -114.6042436 E_total: -35865.9536
+Kinetic energy: 0.552666
+Finalised timestep 14
+Finished timestep 14 of 100
+Current flop count SP: 0 FLOPS, DP: 126.63729 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 128.96372 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 131.15613 PFLOPS
+Timestep 15 took 3.808339
+Current total flops: SP: 0 FLOPS, DP: 132.74103 PFLOPS
+Finalising timestep 15 of 100
+Current total flops: SP: 0 FLOPS, DP: 133.80173 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.3813 E_MP2_OS: -84.29336213 E_MP2_SS: -30.34153613 E_MP2: -114.6348983 E_total: -35866.0162
+Kinetic energy: 0.605563
+Finalised timestep 15
+Finished timestep 15 of 100
+Current flop count SP: 0 FLOPS, DP: 134.98787 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 137.30606 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 139.51287 PFLOPS
+Timestep 16 took 3.797108
+Current total flops: SP: 0 FLOPS, DP: 141.07613 PFLOPS
+Finalising timestep 16 of 100
+Current total flops: SP: 0 FLOPS, DP: 142.14945 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.45464 E_MP2_OS: -84.28376576 E_MP2_SS: -30.32658919 E_MP2: -114.6103549 E_total: -35866.06499
+Kinetic energy: 0.647555
+Finalised timestep 16
+Finished timestep 16 of 100
+Current flop count SP: 0 FLOPS, DP: 143.32826 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 145.65061 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 147.84849 PFLOPS
+Timestep 17 took 3.796537
+Current total flops: SP: 0 FLOPS, DP: 149.41937 PFLOPS
+Finalising timestep 17 of 100
+Current total flops: SP: 0 FLOPS, DP: 150.55629 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.56134 E_MP2_OS: -84.24023127 E_MP2_SS: -30.30305064 E_MP2: -114.5432819 E_total: -35866.10462
+Kinetic energy: 0.681328
+Finalised timestep 17
+Finished timestep 17 of 100
+Current flop count SP: 0 FLOPS, DP: 151.6689 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 153.99287 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 156.20049 PFLOPS
+Timestep 18 took 3.785765
+Current total flops: SP: 0 FLOPS, DP: 157.75775 PFLOPS
+Finalising timestep 18 of 100
+Current total flops: SP: 0 FLOPS, DP: 158.81585 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.67582 E_MP2_OS: -84.17637723 E_MP2_SS: -30.27698564 E_MP2: -114.4533629 E_total: -35866.12919
+Kinetic energy: 0.704179
+Finalised timestep 18
+Finished timestep 18 of 100
+Current flop count SP: 0 FLOPS, DP: 160.01902 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 162.33693 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 164.53796 PFLOPS
+Timestep 19 took 3.781370
+Current total flops: SP: 0 FLOPS, DP: 166.09953 PFLOPS
+Finalising timestep 19 of 100
+Current total flops: SP: 0 FLOPS, DP: 167.15571 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.75825 E_MP2_OS: -84.11562506 E_MP2_SS: -30.25618395 E_MP2: -114.371809 E_total: -35866.13006
+Kinetic energy: 0.702467
+Finalised timestep 19
+Finished timestep 19 of 100
+Current flop count SP: 0 FLOPS, DP: 168.35702 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 170.68566 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 172.89042 PFLOPS
+Timestep 20 took 3.777407
+Current total flops: SP: 0 FLOPS, DP: 174.43746 PFLOPS
+Finalising timestep 20 of 100
+Current total flops: SP: 0 FLOPS, DP: 175.46114 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.77838 E_MP2_OS: -84.07337821 E_MP2_SS: -30.24411141 E_MP2: -114.3174896 E_total: -35866.09587
+Kinetic energy: 0.667435
+Finalised timestep 20
+Finished timestep 20 of 100
+Current flop count SP: 0 FLOPS, DP: 176.7098 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 179.02952 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 181.23304 PFLOPS
+Timestep 21 took 3.766511
+Current total flops: SP: 0 FLOPS, DP: 182.77372 PFLOPS
+Finalising timestep 21 of 100
+Current total flops: SP: 0 FLOPS, DP: 183.84877 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.75294 E_MP2_OS: -84.05667773 E_MP2_SS: -30.24037462 E_MP2: -114.2970523 E_total: -35866.04999
+Kinetic energy: 0.623646
+Finalised timestep 21
+Finished timestep 21 of 100
+Current flop count SP: 0 FLOPS, DP: 185.03365 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 187.35805 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 189.57483 PFLOPS
+Timestep 22 took 3.772446
+Current total flops: SP: 0 FLOPS, DP: 191.11107 PFLOPS
+Finalising timestep 22 of 100
+Current total flops: SP: 0 FLOPS, DP: 192.14973 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.73282 E_MP2_OS: -84.06398851 E_MP2_SS: -30.24193612 E_MP2: -114.3059246 E_total: -35866.03875
+Kinetic energy: 0.614814
+Finalised timestep 22
+Finished timestep 22 of 100
+Current flop count SP: 0 FLOPS, DP: 193.37329 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 195.69752 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 197.90522 PFLOPS
+Timestep 23 took 3.765172
+Current total flops: SP: 0 FLOPS, DP: 199.45841 PFLOPS
+Finalising timestep 23 of 100
+Current total flops: SP: 0 FLOPS, DP: 200.50689 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.74105 E_MP2_OS: -84.08877503 E_MP2_SS: -30.24555586 E_MP2: -114.3343309 E_total: -35866.07539
+Kinetic energy: 0.650613
+Finalised timestep 23
+Finished timestep 23 of 100
+Current flop count SP: 0 FLOPS, DP: 201.71265 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 204.03793 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 206.25967 PFLOPS
+Timestep 24 took 3.763288
+Current total flops: SP: 0 FLOPS, DP: 207.80111 PFLOPS
+Finalising timestep 24 of 100
+Current total flops: SP: 0 FLOPS, DP: 208.85222 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.75657 E_MP2_OS: -84.11691591 E_MP2_SS: -30.24703085 E_MP2: -114.3639468 E_total: -35866.12051
+Kinetic energy: 0.696669
+Finalised timestep 24
+Finished timestep 24 of 100
+Current flop count SP: 0 FLOPS, DP: 210.05894 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 212.38811 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 214.61437 PFLOPS
+Timestep 25 took 3.756829
+Current total flops: SP: 0 FLOPS, DP: 216.13917 PFLOPS
+Finalising timestep 25 of 100
+Current total flops: SP: 0 FLOPS, DP: 217.17859 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.75867 E_MP2_OS: -84.13305248 E_MP2_SS: -30.24327576 E_MP2: -114.3763282 E_total: -35866.135
+Kinetic energy: 0.720522
+Finalised timestep 25
+Finished timestep 25 of 100
+Current flop count SP: 0 FLOPS, DP: 218.39759 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 220.72813 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 222.96666 PFLOPS
+Timestep 26 took 3.753636
+Current total flops: SP: 0 FLOPS, DP: 224.48119 PFLOPS
+Finalising timestep 26 of 100
+Current total flops: SP: 0 FLOPS, DP: 225.53241 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.7615 E_MP2_OS: -84.13609431 E_MP2_SS: -30.23729492 E_MP2: -114.3733892 E_total: -35866.13489
+Kinetic energy: 0.727906
+Finalised timestep 26
+Finished timestep 26 of 100
+Current flop count SP: 0 FLOPS, DP: 226.73834 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 229.08137 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 231.31045 PFLOPS
+Timestep 27 took 3.748163
+Current total flops: SP: 0 FLOPS, DP: 232.81544 PFLOPS
+Finalising timestep 27 of 100
+Current total flops: SP: 0 FLOPS, DP: 233.86136 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.79605 E_MP2_OS: -84.1219802 E_MP2_SS: -30.22969841 E_MP2: -114.3516786 E_total: -35866.14773
+Kinetic energy: 0.747717
+Finalised timestep 27
+Finished timestep 27 of 100
+Current flop count SP: 0 FLOPS, DP: 235.07076 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 237.41196 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 239.63563 PFLOPS
+Timestep 28 took 3.754943
+Current total flops: SP: 0 FLOPS, DP: 241.16158 PFLOPS
+Finalising timestep 28 of 100
+Current total flops: SP: 0 FLOPS, DP: 242.12116 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.86672 E_MP2_OS: -84.09366412 E_MP2_SS: -30.2223082 E_MP2: -114.3159723 E_total: -35866.18269
+Kinetic energy: 0.789132
+Finalised timestep 28
+Finished timestep 28 of 100
+Current flop count SP: 0 FLOPS, DP: 243.43113 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 245.76343 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 247.9885 PFLOPS
+Timestep 29 took 3.748834
+Current total flops: SP: 0 FLOPS, DP: 249.49999 PFLOPS
+Finalising timestep 29 of 100
+Current total flops: SP: 0 FLOPS, DP: 250.56225 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.93932 E_MP2_OS: -84.05981678 E_MP2_SS: -30.21735531 E_MP2: -114.2771721 E_total: -35866.21649
+Kinetic energy: 0.827793
+Finalised timestep 29
+Finished timestep 29 of 100
+Current flop count SP: 0 FLOPS, DP: 251.76858 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 254.12132 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 256.33746 PFLOPS
+Timestep 30 took 3.749555
+Current total flops: SP: 0 FLOPS, DP: 257.84681 PFLOPS
+Finalising timestep 30 of 100
+Current total flops: SP: 0 FLOPS, DP: 258.88169 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.97812 E_MP2_OS: -84.02791258 E_MP2_SS: -30.21531421 E_MP2: -114.2432268 E_total: -35866.22135
+Kinetic energy: 0.837887
+Finalised timestep 30
+Finished timestep 30 of 100
+Current flop count SP: 0 FLOPS, DP: 260.10215 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 262.45068 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 264.67687 PFLOPS
+Timestep 31 took 3.747348
+Current total flops: SP: 0 FLOPS, DP: 266.18956 PFLOPS
+Finalising timestep 31 of 100
+Current total flops: SP: 0 FLOPS, DP: 267.19372 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98434 E_MP2_OS: -84.00393665 E_MP2_SS: -30.21506832 E_MP2: -114.219005 E_total: -35866.20334
+Kinetic energy: 0.826150
+Finalised timestep 31
+Finished timestep 31 of 100
+Current flop count SP: 0 FLOPS, DP: 268.46049 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 270.79515 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 273.03028 PFLOPS
+Timestep 32 took 3.741027
+Current total flops: SP: 0 FLOPS, DP: 274.52664 PFLOPS
+Finalising timestep 32 of 100
+Current total flops: SP: 0 FLOPS, DP: 275.52078 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.98906 E_MP2_OS: -83.99569751 E_MP2_SS: -30.21650511 E_MP2: -114.2122026 E_total: -35866.20126
+Kinetic energy: 0.824605
+Finalised timestep 32
+Finished timestep 32 of 100
+Current flop count SP: 0 FLOPS, DP: 276.78879 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 279.1371 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 281.36877 PFLOPS
+Timestep 33 took 3.742950
+Current total flops: SP: 0 FLOPS, DP: 282.86897 PFLOPS
+Finalising timestep 33 of 100
+Current total flops: SP: 0 FLOPS, DP: 283.922 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.01145 E_MP2_OS: -84.00066707 E_MP2_SS: -30.21722315 E_MP2: -114.2178902 E_total: -35866.22934
+Kinetic energy: 0.851567
+Finalised timestep 33
+Finished timestep 33 of 100
+Current flop count SP: 0 FLOPS, DP: 285.13083 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 287.49293 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 289.71257 PFLOPS
+Timestep 34 took 3.733530
+Current total flops: SP: 0 FLOPS, DP: 291.19952 PFLOPS
+Finalising timestep 34 of 100
+Current total flops: SP: 0 FLOPS, DP: 292.20969 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.03173 E_MP2_OS: -84.02289397 E_MP2_SS: -30.21940622 E_MP2: -114.2423002 E_total: -35866.27403
+Kinetic energy: 0.886962
+Finalised timestep 34
+Finished timestep 34 of 100
+Current flop count SP: 0 FLOPS, DP: 293.48441 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 295.82527 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 298.04817 PFLOPS
+Timestep 35 took 3.734449
+Current total flops: SP: 0 FLOPS, DP: 299.54059 PFLOPS
+Finalising timestep 35 of 100
+Current total flops: SP: 0 FLOPS, DP: 300.60001 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.01738 E_MP2_OS: -84.05219421 E_MP2_SS: -30.22155836 E_MP2: -114.2737526 E_total: -35866.29114
+Kinetic energy: 0.897214
+Finalised timestep 35
+Finished timestep 35 of 100
+Current flop count SP: 0 FLOPS, DP: 301.82454 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 304.18756 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 306.40343 PFLOPS
+Timestep 36 took 3.726006
+Current total flops: SP: 0 FLOPS, DP: 307.86897 PFLOPS
+Finalising timestep 36 of 100
+Current total flops: SP: 0 FLOPS, DP: 308.93554 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.97108 E_MP2_OS: -84.08085806 E_MP2_SS: -30.22364195 E_MP2: -114.3045 E_total: -35866.27558
+Kinetic energy: 0.877908
+Finalised timestep 36
+Finished timestep 36 of 100
+Current flop count SP: 0 FLOPS, DP: 310.1396 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 312.50547 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 314.71706 PFLOPS
+Timestep 37 took 3.728300
+Current total flops: SP: 0 FLOPS, DP: 316.20392 PFLOPS
+Finalising timestep 37 of 100
+Current total flops: SP: 0 FLOPS, DP: 317.24774 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.93187 E_MP2_OS: -84.10376928 E_MP2_SS: -30.22629385 E_MP2: -114.3300631 E_total: -35866.26193
+Kinetic energy: 0.856048
+Finalised timestep 37
+Finished timestep 37 of 100
+Current flop count SP: 0 FLOPS, DP: 318.46965 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 320.84518 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 323.05924 PFLOPS
+Timestep 38 took 3.733741
+Current total flops: SP: 0 FLOPS, DP: 324.53341 PFLOPS
+Finalising timestep 38 of 100
+Current total flops: SP: 0 FLOPS, DP: 325.58094 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.9338 E_MP2_OS: -84.10839001 E_MP2_SS: -30.22576265 E_MP2: -114.3341527 E_total: -35866.26796
+Kinetic energy: 0.855002
+Finalised timestep 38
+Finished timestep 38 of 100
+Current flop count SP: 0 FLOPS, DP: 326.80273 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 329.18236 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 331.41601 PFLOPS
+Timestep 39 took 3.720773
+Current total flops: SP: 0 FLOPS, DP: 332.86383 PFLOPS
+Finalising timestep 39 of 100
+Current total flops: SP: 0 FLOPS, DP: 333.85625 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.97769 E_MP2_OS: -84.08892039 E_MP2_SS: -30.2194699 E_MP2: -114.3083903 E_total: -35866.28608
+Kinetic energy: 0.870415
+Finalised timestep 39
+Finished timestep 39 of 100
+Current flop count SP: 0 FLOPS, DP: 335.14306 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 337.51053 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 339.73078 PFLOPS
+Timestep 40 took 3.720115
+Current total flops: SP: 0 FLOPS, DP: 341.18638 PFLOPS
+Finalising timestep 40 of 100
+Current total flops: SP: 0 FLOPS, DP: 342.1965 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.0371 E_MP2_OS: -84.05300503 E_MP2_SS: -30.20884479 E_MP2: -114.2618498 E_total: -35866.29895
+Kinetic energy: 0.878683
+Finalised timestep 40
+Finished timestep 40 of 100
+Current flop count SP: 0 FLOPS, DP: 343.47215 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 345.83945 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 348.09285 PFLOPS
+Timestep 41 took 3.719863
+Current total flops: SP: 0 FLOPS, DP: 349.51318 PFLOPS
+Finalising timestep 41 of 100
+Current total flops: SP: 0 FLOPS, DP: 350.50226 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.08861 E_MP2_OS: -84.00535796 E_MP2_SS: -30.19324259 E_MP2: -114.1986006 E_total: -35866.28721
+Kinetic energy: 0.867593
+Finalised timestep 41
+Finished timestep 41 of 100
+Current flop count SP: 0 FLOPS, DP: 351.79757 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 354.17345 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 356.40662 PFLOPS
+Timestep 42 took 3.714512
+Current total flops: SP: 0 FLOPS, DP: 357.83732 PFLOPS
+Finalising timestep 42 of 100
+Current total flops: SP: 0 FLOPS, DP: 358.90939 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.13201 E_MP2_OS: -83.96262614 E_MP2_SS: -30.17648328 E_MP2: -114.1391094 E_total: -35866.27112
+Kinetic energy: 0.852705
+Finalised timestep 42
+Finished timestep 42 of 100
+Current flop count SP: 0 FLOPS, DP: 360.13375 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 362.50624 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 364.74865 PFLOPS
+Timestep 43 took 3.708064
+Current total flops: SP: 0 FLOPS, DP: 366.16529 PFLOPS
+Finalising timestep 43 of 100
+Current total flops: SP: 0 FLOPS, DP: 367.22091 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.17273 E_MP2_OS: -83.93900987 E_MP2_SS: -30.16258997 E_MP2: -114.1015998 E_total: -35866.27433
+Kinetic energy: 0.856686
+Finalised timestep 43
+Finished timestep 43 of 100
+Current flop count SP: 0 FLOPS, DP: 368.45208 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 370.82693 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 373.07686 PFLOPS
+Timestep 44 took 3.706618
+Current total flops: SP: 0 FLOPS, DP: 374.48775 PFLOPS
+Finalising timestep 44 of 100
+Current total flops: SP: 0 FLOPS, DP: 375.58027 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.19612 E_MP2_OS: -83.94666309 E_MP2_SS: -30.15629888 E_MP2: -114.102962 E_total: -35866.29908
+Kinetic energy: 0.879207
+Finalised timestep 44
+Finished timestep 44 of 100
+Current flop count SP: 0 FLOPS, DP: 376.78069 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 379.16424 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 381.40244 PFLOPS
+Timestep 45 took 3.706683
+Current total flops: SP: 0 FLOPS, DP: 382.81139 PFLOPS
+Finalising timestep 45 of 100
+Current total flops: SP: 0 FLOPS, DP: 383.86606 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.17371 E_MP2_OS: -83.98384941 E_MP2_SS: -30.15875425 E_MP2: -114.1426037 E_total: -35866.31632
+Kinetic energy: 0.897273
+Finalised timestep 45
+Finished timestep 45 of 100
+Current flop count SP: 0 FLOPS, DP: 385.09042 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 387.47705 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 389.72541 PFLOPS
+Timestep 46 took 3.713138
+Current total flops: SP: 0 FLOPS, DP: 391.13833 PFLOPS
+Finalising timestep 46 of 100
+Current total flops: SP: 0 FLOPS, DP: 392.20394 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35752.09615 E_MP2_OS: -84.04292289 E_MP2_SS: -30.16966511 E_MP2: -114.212588 E_total: -35866.30874
+Kinetic energy: 0.892798
+Finalised timestep 46
+Finished timestep 46 of 100
+Current flop count SP: 0 FLOPS, DP: 393.4273 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 395.80562 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 398.04741 PFLOPS
+Timestep 47 took 3.705503
+Current total flops: SP: 0 FLOPS, DP: 399.46814 PFLOPS
+Finalising timestep 47 of 100
+Current total flops: SP: 0 FLOPS, DP: 400.52437 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.9897 E_MP2_OS: -84.10436744 E_MP2_SS: -30.1840461 E_MP2: -114.2884135 E_total: -35866.27811
+Kinetic energy: 0.870399
+Finalised timestep 47
+Finished timestep 47 of 100
+Current flop count SP: 0 FLOPS, DP: 401.7423 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 404.12989 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 406.37434 PFLOPS
+Timestep 48 took 3.707196
+Current total flops: SP: 0 FLOPS, DP: 407.78319 PFLOPS
+Finalising timestep 48 of 100
+Current total flops: SP: 0 FLOPS, DP: 408.84516 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.89807 E_MP2_OS: -84.15088825 E_MP2_SS: -30.19674413 E_MP2: -114.3476324 E_total: -35866.2457
+Kinetic energy: 0.846722
+Finalised timestep 48
+Finished timestep 48 of 100
+Current flop count SP: 0 FLOPS, DP: 410.05791 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 412.44992 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 414.69065 PFLOPS
+Timestep 49 took 3.707833
+Current total flops: SP: 0 FLOPS, DP: 416.10918 PFLOPS
+Finalising timestep 49 of 100
+Current total flops: SP: 0 FLOPS, DP: 417.12152 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.85393 E_MP2_OS: -84.16792989 E_MP2_SS: -30.20243747 E_MP2: -114.3703674 E_total: -35866.2243
+Kinetic energy: 0.832533
+Finalised timestep 49
+Finished timestep 49 of 100
+Current flop count SP: 0 FLOPS, DP: 418.36783 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 420.75048 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 422.99692 PFLOPS
+Timestep 50 took 3.717034
+Current total flops: SP: 0 FLOPS, DP: 424.43245 PFLOPS
+Finalising timestep 50 of 100
+Current total flops: SP: 0 FLOPS, DP: 425.47685 PFLOPS
+=======================================================
+           Fragmentation Calculation Summary           
+=======================================================
+
+Total energy: E_RHF: -35751.86634 E_MP2_OS: -84.15047998 E_MP2_SS: -30.19809864 E_MP2: -114.3485786 E_total: -35866.21491
+Kinetic energy: 0.828105
+Finalised timestep 50
+Finished timestep 50 of 100
+Current flop count SP: 0 FLOPS, DP: 426.72408 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 429.10472 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 431.34604 PFLOPS
+Timestep 51 took 3.714048
+Current total flops: SP: 0 FLOPS, DP: 432.75768 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 435.10484 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 437.2542 PFLOPS
+Current flop count SP: 0 FLOPS, DP: 439.42518 PFLOPS
+slurmstepd: error: *** STEP 29722871.0 ON nid001024 CANCELLED AT 2024-08-24T20:14:15 DUE TO TIME LIMIT ***
